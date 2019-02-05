@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:id="@+id/constraint"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/home_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/play_button"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_title" />
+
+    <Button
+        android:id="@+id/home_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/options_button"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_start" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/home_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:inputType="none"-->
+        <!--android:textSize="30sp"-->
+        <!--android:layout_marginTop="50sp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Logo Quiz : Old"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/home_start"-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/play_button"-->
+    <!--android:text="Play"-->
+        <!--android:layout_marginTop="100sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/home_title"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/home_title"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/home_title"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/home_title"-->
+    <!--android:textSize="20sp"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/home_start"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.8"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/play_button"-->
+            <!--android:layout_marginLeft="100sp"-->
+            <!--android:layout_marginRight="100sp"-->
+            <!--android:text="Play"-->
+            <!--android:textSize="20sp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<Button-->
+            <!--android:id="@+id/home_options"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.8"-->
+            <!--android:background="@drawable/options_button"-->
+            <!--android:layout_marginLeft="100sp"-->
+            <!--android:layout_marginRight="100dp"-->
+            <!--android:text="Options"-->
+            <!--android:textSize="20sp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.8"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<Button-->
+    <!--android:id="@+id/home_riddle"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.8"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/try_button"-->
+    <!--android:layout_marginLeft="60sp"-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:text="Try Hangman Riddle"-->
+    <!--android:textSize="@dimen/activity_horizontal_margin"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.6"-->
+        <!--android:layout_marginBottom="20sp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/home_fb_share"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/fb"-->
+            <!--android:layout_marginRight="10sp"-->
+            <!--android:layout_marginLeft="100sp"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/home_twitter_share"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/twitter_icon"-->
+            <!--android:layout_marginRight="100dp"/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+</android.support.constraint.ConstraintLayout>
