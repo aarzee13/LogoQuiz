@@ -168,9 +168,9 @@ public class GroupActivity extends AppCompatActivity {
 
     public void showDetail(Integer po){
         String grpFilter = grp_list.get(po).getGrp_id();
-//        Intent detailI = new Intent(GroupActivity.this,ItemActivity.class);
-//        detailI.putExtra("grpFilter",grpFilter);
-//        startActivity(detailI);
+        Intent detailI = new Intent(GroupActivity.this,ItemActivity.class);
+        detailI.putExtra("grpFilter",grpFilter);
+        startActivity(detailI);
     }
 
     @Override
