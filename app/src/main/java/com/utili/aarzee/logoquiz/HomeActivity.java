@@ -14,12 +14,15 @@ import android.view.animation.AnticipateOvershootInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.IOException;
+
 public class HomeActivity extends AppCompatActivity {
 
     Button start;
     Button options;
     ConstraintLayout constraint;
     TextView title;
+    SqliteController sqlt;
     boolean set = false;
     ConstraintSet constraintSet =  new ConstraintSet();
     final Handler handler = new Handler();
@@ -28,6 +31,19 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        sqlt = new SqliteController(getApplicationContext());
+        //to check database existence
+        if (!sqlt.checkDataBase()) {
+            try {
+                sqlt.createDataBase();
+                // sqlt.importDBFromSdCard();
+                sqlt.importDBFromAsset();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
 
 
         constraint = findViewById(R.id.constraint);

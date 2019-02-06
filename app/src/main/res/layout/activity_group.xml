@@ -8,6 +8,7 @@
     tools:context=".GroupActivity">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_recyclerview"
         android:layout_width="344dp"
         android:layout_height="551dp"
         android:layout_marginBottom="8dp"
