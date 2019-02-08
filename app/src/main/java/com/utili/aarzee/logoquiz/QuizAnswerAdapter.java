@@ -40,12 +40,16 @@ public class QuizAnswerAdapter extends RecyclerView.Adapter<QuizAnswerAdapter.My
     @Override
     public void onBindViewHolder(QuizAnswerAdapter.MyViewHolder holder, int position) {
         String imageAnswer = emptyAnswerArray.get(position);
-        if("?".equals(imageAnswer)){
+//        if("?".equals(imageAnswer)){
+        if(imageAnswer.matches("^[0-9]$")){
+
             //imageAnswer = "refresh";
-            holder.title.setImageResource(R.drawable.refresh);
+            holder.title.setImageResource(R.drawable.question_mark);
         }
-        int d1 = itemContext.getResources().getIdentifier(imageAnswer,"drawable",itemContext.getPackageName());
-        holder.title.setImageResource(d1);
+        else {
+            int d1 = itemContext.getResources().getIdentifier(imageAnswer, "drawable", itemContext.getPackageName());
+            holder.title.setImageResource(d1);
+        }
             //holder.title.setText(emptyAnswerArray.get(position));
     }
 

@@ -1,13 +1,16 @@
 package com.utili.aarzee.logoquiz;
 
+import android.animation.Animator;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,6 +18,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -51,6 +55,12 @@ public class QuizActivity extends AppCompatActivity {
     AlertDialog alertDialog;
     String reference_try;
     int chooseNo= 0;
+    int clickedPosition;
+    int clickedPositions = 0;
+    int image2_status;
+    int image3_status;
+    int image4_status;
+    String imageResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,12 +86,15 @@ public class QuizActivity extends AppCompatActivity {
 
         Integer hangNo = item_detail.get(0).getHang_no();
         //setHangImage(hangNo);
-
-        String imageName = item_detail.get(0).getItem_name().replace(' ','_');
-        String imageName1 = item_detail.get(0).getItem_name().replace(' ','_')+"1";
-        String imageName2 = item_detail.get(0).getItem_name().replace(' ','_')+"2";
-        String imageName3 = item_detail.get(0).getItem_name().replace(' ','_')+"3";
-        String imageName4 = item_detail.get(0).getItem_name().replace(' ','_')+"4";
+        final String imageResult = item_detail.get(0).getResult();
+        image2_status = item_detail.get(0).getImage2_status();
+        image3_status = item_detail.get(0).getImage3_status();
+        image4_status = item_detail.get(0).getImage4_status();
+        final String imageName = item_detail.get(0).getItem_name().replace(' ','_');
+        final String imageName1 = item_detail.get(0).getItem_name().replace(' ','_')+"1";
+        final String imageName2 = item_detail.get(0).getItem_name().replace(' ','_')+"2";
+        final String imageName3 = item_detail.get(0).getItem_name().replace(' ','_')+"3";
+        final String imageName4 = item_detail.get(0).getItem_name().replace(' ','_')+"4";
         String randomOption = item_detail.get(0).getOption();
         String correctTry = item_detail.get(0).getCorrect_try();
         reference_try = item_detail.get(0).getReference_try();
@@ -106,12 +119,18 @@ public class QuizActivity extends AppCompatActivity {
 //        quizImage1.setImageResource(d);
         int d1 = quizContext.getResources().getIdentifier(imageName1,"drawable",quizContext.getPackageName());
         quizImage1.setImageResource(d1);
-        int d2 = quizContext.getResources().getIdentifier(imageName2,"drawable",quizContext.getPackageName());
-        quizImage2.setImageResource(d2);
-        int d3 = quizContext.getResources().getIdentifier(imageName3,"drawable",quizContext.getPackageName());
-        quizImage3.setImageResource(d3);
-        int d4 = quizContext.getResources().getIdentifier(imageName4,"drawable",quizContext.getPackageName());
-        quizImage4.setImageResource(d4);
+        final int d2 = quizContext.getResources().getIdentifier(imageName2,"drawable",quizContext.getPackageName());
+        if(image2_status == 1) {
+            quizImage2.setImageResource(d2);
+        }
+        final int d3 = quizContext.getResources().getIdentifier(imageName3,"drawable",quizContext.getPackageName());
+        if(image3_status == 1) {
+            quizImage3.setImageResource(d3);
+        }
+        final int d4 = quizContext.getResources().getIdentifier(imageName4,"drawable",quizContext.getPackageName());
+            if(image4_status == 1) {
+                quizImage4.setImageResource(d4);
+            }
 
         optionRecyclerView = (RecyclerView) findViewById(R.id.option_recyclerview);
 
@@ -133,20 +152,41 @@ public class QuizActivity extends AppCompatActivity {
                 new RecyclerItemClickListener(quizContext, answerRecyclerView, new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-                        String itemFilt = optionList.get(position);
+                        if(!"success".equals(imageResult)){
+                        String itemFilt = emptyAnswerList.get(position);
+                        if(itemFilt.matches("^[a-zA-Z]*$")) {
+                        clickedPositions = 0;
+                        for(String s : optionList) {
+                            if ("1".equals(s)) {
+                                clickedPosition = clickedPositions;
+                                break;
+                            }
+                            clickedPositions++;
+                        }
                         //if(!"".equals(itemFilt)) {
                             //if (emptyAnswerList.size() > chooseNo) {
 
-                            optionList.set(chooseNo, itemFilt);
-                            emptyAnswerList.set(position, "");
+                            optionList.set(clickedPositions, itemFilt);
+                        String remOption = "";
+                        for (String s : optionList) {
+                            remOption += s;
+                        }
+                            emptyAnswerList.set(position, Integer.toString(position + 1));
+                        String ansList = "";
+                        for (String s : emptyAnswerList) {
+                            ansList += s;
+                        }
                                 optionAdapter = new QuizOptionAdapter(quizContext, optionList);
                                 optionRecyclerView.setAdapter(optionAdapter);
                                 answerAdapter = new QuizAnswerAdapter(quizContext, emptyAnswerList);
                                 answerRecyclerView.setAdapter(answerAdapter);
+                        sqlt.updateCorrectTry(itemFilter, ansList);
+                        sqlt.updateOption(itemFilter, remOption);
+                        chooseNo -=1;
                                 //chooseNo += 1;
-                            //}
+                            }
 
-                       // }
+                        }
                         }
 
                     @Override
@@ -156,10 +196,6 @@ public class QuizActivity extends AppCompatActivity {
                 })
         );
 
-
-
-
-
         optionRecyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(quizContext, optionRecyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
@@ -168,14 +204,42 @@ public class QuizActivity extends AppCompatActivity {
                         String itemFilt = optionList.get(position);
                         if(!"".equals(itemFilt)) {
                             if(emptyAnswerList.size() > chooseNo) {
+                                clickedPositions = 0;
+                                for(String s : emptyAnswerList){
+                                    if(s.matches("^[0-9]$")){
+                                        clickedPosition = clickedPositions;
+                                        break;
+                                    }
+                                    clickedPositions++;
+                                }
 
-                                emptyAnswerList.set(chooseNo, itemFilt);
-                                optionList.set(position, "");
+                                emptyAnswerList.set(clickedPosition, itemFilt);
+                                String ansList = "";
+                                for (String s : emptyAnswerList) {
+                                    ansList += s;
+                                }
+                                optionList.set(position, "1");
+                                String remOption = "";
+                                for (String s : optionList) {
+                                    remOption += s;
+                                }
                                 optionAdapter = new QuizOptionAdapter(quizContext, optionList);
                                 optionRecyclerView.setAdapter(optionAdapter);
                                 answerAdapter = new QuizAnswerAdapter(quizContext, emptyAnswerList);
                                 answerRecyclerView.setAdapter(answerAdapter);
                                 chooseNo += 1;
+                                sqlt.updateCorrectTry(itemFilter, ansList);
+                                sqlt.updateOption(itemFilter, remOption);
+                                // insert success in database if emptyAnswerList = answerList
+                                if (answerCheck.containsAll(emptyAnswerList) && emptyAnswerList.containsAll(answerCheck)) {
+                                    //here update database
+                                    Toast.makeText(quizContext, "Excellent !", Toast.LENGTH_SHORT).show();
+                                    sqlt.updateResult(itemFilter, "success");
+                                    sqlt.updateOption(itemFilter, "");
+                                    Intent intent = getIntent();
+                                    finish();
+                                    startActivity(intent);
+                                }
                             }
 
 
@@ -243,6 +307,34 @@ public class QuizActivity extends AppCompatActivity {
                 })
         );
 
+        quizImage1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showImage1(imageName1,imageResult);
+            }
+        });
+
+        quizImage2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showImage2(imageName2,d2,imageResult);
+            }
+        });
+
+        quizImage3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showImage3(imageName3,d3,imageResult);
+            }
+        });
+
+        quizImage4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showImage4(imageName4,d4,imageResult);
+            }
+        });
+
 //        quizHint1.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -280,49 +372,173 @@ public class QuizActivity extends AppCompatActivity {
 //        });
 
 //        showSuccessFailImage();
-//        showSuccessImage();
+        showSuccessImage();
     }
 
-//    public void zoomImage(){
-//        String imageName = item_detail.get(0).getItem_name().replace(' ','_');
-//        String imageResult = item_detail.get(0).getResult();
-//        final LayoutInflater li = (LayoutInflater)QuizActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        final View promptsView = li.inflate(R.layout.activity_zoom, null);
-//
-//
-//        int zd = quizContext.getResources().getIdentifier(imageName,"drawable",quizContext.getPackageName());
-//
-//        ImageView iv = (ImageView)promptsView.findViewById(R.id.zoom_image);
-//        iv.setImageResource(zd);
-//        if("success".equals(imageResult)) {
-//            TextView tv = (TextView) promptsView.findViewById(R.id.zoom_text);
-//
-//            tv.setText(item_detail.get(0).getProper_name().toString());
-//        }
-//
-//
-//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-//                promptsView.getContext());
-//
-//        // set prompts.xml to alertdialog builder
-//        alertDialogBuilder.setView(promptsView);
-//
-//        alertDialogBuilder.setPositiveButton("Close",
-//                new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        alertDialog.dismiss();
-//                    }
-//                });
-//
-//        // create alert dialog
-//        alertDialog = alertDialogBuilder.create();
-//        int width = (int)(getResources().getDisplayMetrics().widthPixels*1.1f);
-//        int height = (int)(getResources().getDisplayMetrics().heightPixels*0.7f);
-//
-//        // show it
-//        alertDialog.show();
-//        alertDialog.getWindow().setLayout(width,height);
-//    }
+
+
+    private void showImage1(String image1,String imageResult) {
+        zoomImage(image1);
+    }
+
+    private void showImage2(String image2,final int d2,String imageResult) {
+        item_detail = sqlt.getQuiz(itemFilter);
+        image2_status = item_detail.get(0).getImage2_status();
+        if(image2_status == 0 && "fail".equals(imageResult)) {
+            quizImage2.setRotationY(0f);
+            quizImage2.animate().rotationY(90f).setListener(new Animator.AnimatorListener() {
+
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    //iv.setImageDrawable(drawable);
+                    quizImage2.setImageResource(d2);
+                    quizImage2.setRotationY(270f);
+                    quizImage2.animate().rotationY(360f).setListener(null);
+
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+            });
+
+            sqlt.updateImageOption(itemFilter,"image2_status");
+        }
+        else{
+            zoomImage(image2);
+        }
+    }
+
+    private void showImage3(String image3,final int d3,String imageResult) {
+        item_detail = sqlt.getQuiz(itemFilter);
+        image3_status = item_detail.get(0).getImage3_status();
+        if(image3_status == 0 && "fail".equals(imageResult)) {
+            quizImage3.setRotationY(0f);
+            quizImage3.animate().rotationY(90f).setListener(new Animator.AnimatorListener() {
+
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    //iv.setImageDrawable(drawable);
+                    quizImage3.setImageResource(d3);
+                    quizImage3.setRotationY(270f);
+                    quizImage3.animate().rotationY(360f).setListener(null);
+
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+            });
+            sqlt.updateImageOption(itemFilter,"image3_status");
+        }
+        else{
+            zoomImage(image3);
+        }
+    }
+
+    private void showImage4(String image4,final int d4,String imageResult) {
+//        ObjectAnimator anim = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.anim.card_flip);
+        //Animation anim = AnimationUtils.loadAnimation(this,R.anim.swing_up_right);
+//        ObjectAnimator anim = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.card_flip);
+//        anim.setTarget(quizImage4);
+//        anim.setDuration(1500);
+//        anim.start();
+//        quizImage4.setImageResource(d3);
+        //final Drawable drawable=getResources().getDrawable(R.drawable.a);
+        //final ImageView iv = ((ImageView)findViewById(R.id.quiz_image4));
+        item_detail = sqlt.getQuiz(itemFilter);
+        image4_status = item_detail.get(0).getImage4_status();
+        if(image4_status == 0 && "fail".equals(imageResult)) {
+            quizImage4.setRotationY(0f);
+            quizImage4.animate().rotationY(90f).setListener(new Animator.AnimatorListener() {
+
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    //iv.setImageDrawable(drawable);
+                    quizImage4.setImageResource(d4);
+                    quizImage4.setRotationY(270f);
+                    quizImage4.animate().rotationY(360f).setListener(null);
+
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+            });
+            sqlt.updateImageOption(itemFilter,"image4_status");
+        }
+        else{
+            zoomImage(image4);
+        }
+    }
+
+
+
+    public void zoomImage(String iName){
+        //String imageName = item_detail.get(0).getItem_name().replace(' ','_');
+        String imageName = iName;
+        String imageResult = item_detail.get(0).getResult();
+        final LayoutInflater li = (LayoutInflater)QuizActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        final View promptsView = li.inflate(R.layout.activity_zoom, null);
+
+
+        int zd = quizContext.getResources().getIdentifier(imageName,"drawable",quizContext.getPackageName());
+
+        ImageView iv = (ImageView)promptsView.findViewById(R.id.zoom_image);
+        iv.setImageResource(zd);
+        if("success".equals(imageResult)) {
+            TextView tv = (TextView) promptsView.findViewById(R.id.zoom_text);
+
+            tv.setText(item_detail.get(0).getProper_name().toString());
+        }
+
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                promptsView.getContext());
+
+        // set prompts.xml to alertdialog builder
+        alertDialogBuilder.setView(promptsView);
+
+        alertDialogBuilder.setPositiveButton("Close",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        alertDialog.dismiss();
+                    }
+                });
+
+        // create alert dialog
+        alertDialog = alertDialogBuilder.create();
+        int width = (int)(getResources().getDisplayMetrics().widthPixels*1.0f);
+        int height = (int)(getResources().getDisplayMetrics().heightPixels*0.7f);
+
+        // show it
+        alertDialog.show();
+        alertDialog.getWindow().setLayout(width,height);
+    }
 
     public Integer getCurrentHangNo(){
         item_hangNo = sqlt.getQuiz(itemFilter);
@@ -604,12 +820,13 @@ public class QuizActivity extends AppCompatActivity {
 //        }
 //    }
 
-//    public void showSuccessImage(){
-//        item_detail = sqlt.getQuiz(itemFilter);
-//        if("success".equals(item_detail.get(0).getResult())){
-//            zoomImage();
-//        }
-//    }
+    public void showSuccessImage(){
+        item_detail = sqlt.getQuiz(itemFilter);
+        if("success".equals(item_detail.get(0).getResult())){
+            final String imaName = item_detail.get(0).getItem_name().replace(' ','_');
+            zoomImage(imaName);
+        }
+    }
 
     public void reloadActivity(){
         Intent intent = getIntent();

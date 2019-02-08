@@ -22,6 +22,9 @@ public class Item_Model {
     Integer countHanged = 0;
     Integer countTotal = 0;
     String proper_name = "";
+    Integer image2_status = 0;
+    Integer image3_status = 0;
+    Integer image4_status = 0;
 
 
     public Integer getId() {
@@ -158,5 +161,29 @@ public class Item_Model {
 
     public void setProper_name(String proper_name) {
         this.proper_name = proper_name;
+    }
+
+    public Integer getImage2_status() {
+        return image2_status;
+    }
+
+    public void setImage2_status(Integer image2_status) {
+        this.image2_status = image2_status;
+    }
+
+    public Integer getImage3_status() {
+        return image3_status;
+    }
+
+    public void setImage3_status(Integer image3_status) {
+        this.image3_status = image3_status;
+    }
+
+    public Integer getImage4_status() {
+        return image4_status;
+    }
+
+    public void setImage4_status(Integer image4_status) {
+        this.image4_status = image4_status;
     }
 }
