@@ -3,6 +3,7 @@
     package="com.utili.aarzee.logoquiz"
     android:installLocation="auto">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -24,7 +25,10 @@
         <activity android:name=".OptionsActivity" />
         <activity android:name=".ItemActivity" />
         <activity android:name=".QuizActivity" />
-        <activity android:name=".ZoomActivity"></activity>
+        <activity android:name=".ZoomActivity" />
+        <activity android:name=".HintMessageActivity" />
+        <activity android:name=".NoInternetActivity" />
+        <activity android:name=".WikiActivity"></activity>
     </application>
 
 </manifest>

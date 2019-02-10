@@ -166,6 +166,7 @@ public class SqliteController extends SQLiteOpenHelper {
                     item.image2_status = cursor.getInt(cursor.getColumnIndex("image2_status"));
                     item.image3_status = cursor.getInt(cursor.getColumnIndex("image3_status"));
                     item.image4_status = cursor.getInt(cursor.getColumnIndex("image4_status"));
+                    item.reference_options = cursor.getString(cursor.getColumnIndex("reference_options"));
                     cartList2.add(item);
                 } while (cursor.moveToNext());
             }
@@ -263,12 +264,15 @@ public class SqliteController extends SQLiteOpenHelper {
     }
 
     //for reset data
-    public void resetData(String itemFilter, String reference_try) {
+    public void resetData(String itemFilter, String reference_try,String reference_options) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("result", "fail");
         contentValues.put("hang_no", 0);
-        contentValues.put("option", "abcdefghijklmnopqrstuvwxyz");
+        contentValues.put("image2_status", 0);
+        contentValues.put("image3_status", 0);
+        contentValues.put("image4_status", 0);
+        contentValues.put("option", reference_options);
         contentValues.put("correct_try", reference_try);
 
         db.update("tbl_item", contentValues, "item_id = '"+itemFilter+"'",null);

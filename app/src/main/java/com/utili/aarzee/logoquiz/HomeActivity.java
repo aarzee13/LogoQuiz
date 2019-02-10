@@ -1,8 +1,10 @@
 package com.utili.aarzee.logoquiz;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
 import android.support.v7.app.AppCompatActivity;
@@ -26,11 +28,21 @@ public class HomeActivity extends AppCompatActivity {
     boolean set = false;
     ConstraintSet constraintSet =  new ConstraintSet();
     final Handler handler = new Handler();
+    SharedPreferences pref;
+    SharedPreferences.Editor prefEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        pref = PreferenceManager.getDefaultSharedPreferences(HomeActivity.this.getApplication().getApplicationContext());
+        prefEditor = pref.edit();
+        if(pref.getInt("hint_value",-1) < 0) {
+            prefEditor.remove("hint_value");
+            prefEditor.putInt("hint_value", 50);
+            prefEditor.apply();
+        }
 
         sqlt = new SqliteController(getApplicationContext());
         //to check database existence
