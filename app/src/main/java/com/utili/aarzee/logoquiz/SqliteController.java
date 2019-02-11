@@ -211,6 +211,54 @@ public class SqliteController extends SQLiteOpenHelper {
         return cartList2;
     }
 
+    public ArrayList<Item_Model> getNextQuiz(String grp_name, Integer i_id){
+        cartList2.clear();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(
+                "SELECT * FROM tbl_item WHERE grp_id = '"+grp_name+"' and result ='fail' and id >"+i_id+" order by id asc limit 1", null);
+        if (cursor.getCount() != 0) {
+            if (cursor.moveToFirst()) {
+                do {
+                    Item_Model item = new Item_Model();
+
+                    item.id = cursor.getInt(cursor.getColumnIndex("id"));
+                    item.item_id = cursor.getString(cursor.getColumnIndex("item_id"));
+                    item.grp_id = cursor.getString(cursor.getColumnIndex("grp_id"));
+                    cartList2.add(item);
+
+
+                } while (cursor.moveToNext());
+            }
+        }
+        cursor.close();
+        db.close();
+        return cartList2;
+    }
+
+    public ArrayList<Item_Model> getPreviousQuiz(String grp_name, Integer i_id){
+        cartList2.clear();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(
+                "SELECT * FROM tbl_item WHERE grp_id = '"+grp_name+"' and result ='fail' and id <"+i_id+" order by id desc limit 1", null);
+        if (cursor.getCount() != 0) {
+            if (cursor.moveToFirst()) {
+                do {
+                    Item_Model item = new Item_Model();
+
+                    item.id = cursor.getInt(cursor.getColumnIndex("id"));
+                    item.item_id = cursor.getString(cursor.getColumnIndex("item_id"));
+                    item.grp_id = cursor.getString(cursor.getColumnIndex("grp_id"));
+                    cartList2.add(item);
+
+
+                } while (cursor.moveToNext());
+            }
+        }
+        cursor.close();
+        db.close();
+        return cartList2;
+    }
+
 
     //for update hang no
     public void updateHang(String itemFilter,Integer hNo) {

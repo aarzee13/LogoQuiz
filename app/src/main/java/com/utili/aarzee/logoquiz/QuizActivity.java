@@ -24,6 +24,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +33,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -39,7 +41,8 @@ public class QuizActivity extends AppCompatActivity {
     SqliteController sqlt;
     ArrayList<Item_Model> item_detail;
     ArrayList<Item_Model> item_details;
-    ArrayList<Item_Model> item_hangNo;
+    ArrayList<Item_Model> item_detail_for_message;
+    ArrayList<Item_Model> item_next;
     ImageView quizImage1;
     ImageView quizImage2;
     ImageView quizImage3;
@@ -50,6 +53,8 @@ public class QuizActivity extends AppCompatActivity {
     ImageView helpSolve;
     ImageView learn;
     ImageView restart;
+    ImageView quizPrevious;
+    ImageView quizNext;
 //    ImageView hangImage;
 //    Button quizHint1;
 //    Button quizHint2;
@@ -107,6 +112,10 @@ public class QuizActivity extends AppCompatActivity {
         helpSolve = findViewById(R.id.help_solve);
         learn = findViewById(R.id.learn);
         restart = findViewById(R.id.restart);
+        quizPrevious = findViewById(R.id.quiz_previous);
+        quizNext = findViewById(R.id.quiz_next);
+
+
         if("success".equals(item_detail.get(0).getResult())){
             helpHint.setVisibility(View.INVISIBLE);
             helpAddOne.setVisibility(View.INVISIBLE);
@@ -172,7 +181,7 @@ public class QuizActivity extends AppCompatActivity {
         optionRecyclerView = (RecyclerView) findViewById(R.id.option_recyclerview);
 
 
-        optionRecyclerViewLayoutManager = new GridLayoutManager(quizContext,6);
+        optionRecyclerViewLayoutManager = new GridLayoutManager(quizContext,7);
 
         optionRecyclerView.setLayoutManager(optionRecyclerViewLayoutManager);
         optionAdapter = new QuizOptionAdapter(quizContext,optionList);
@@ -180,7 +189,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
         answerRecyclerView = (RecyclerView) findViewById(R.id.answer_recyclerview);
-        answerRecyclerViewLayoutManager = new GridLayoutManager(quizContext,6);
+        answerRecyclerViewLayoutManager = new GridLayoutManager(quizContext,7);
         answerRecyclerView.setLayoutManager(answerRecyclerViewLayoutManager);
         answerAdapter = new QuizAnswerAdapter(quizContext,emptyAnswerList);
         answerRecyclerView.setAdapter(answerAdapter);
@@ -268,11 +277,31 @@ public class QuizActivity extends AppCompatActivity {
                                 sqlt.updateCorrectTry(itemFilter, ansList);
                                 sqlt.updateOption(itemFilter, remOption);
                                 // insert success in database if emptyAnswerList = answerList
-                                //if(answerList.size() == answerCheck.size()) {
                                     if (answerCheck.equals(emptyAnswerList)) {
+                                        item_detail_for_message = sqlt.getQuiz(itemFilter);
+                                        int bonus_hint=0;
                                         //if (answerCheck.containsAll(emptyAnswerList) && emptyAnswerList.containsAll(answerCheck)) {
                                         //here update database
-                                        Toast.makeText(quizContext, "Excellent !", Toast.LENGTH_SHORT).show();
+                                        if(item_detail_for_message.get(0).getImage2_status() == 0 && item_detail_for_message.get(0).getImage3_status() == 0 && item_detail_for_message.get(0).getImage4_status() == 0){
+                                            bonus_hint = 4;
+                                            Toast.makeText(quizContext, "Genuis !", Toast.LENGTH_SHORT).show();
+                                        }
+                                        else if(item_detail_for_message.get(0).getImage3_status() == 0 && item_detail_for_message.get(0).getImage4_status() == 0){
+                                            bonus_hint = 3;
+                                            Toast.makeText(quizContext, "Excellent !", Toast.LENGTH_SHORT).show();
+                                        }
+                                        else if(item_detail_for_message.get(0).getImage4_status() == 0){
+                                            bonus_hint = 2;
+                                            Toast.makeText(quizContext, "Good !", Toast.LENGTH_SHORT).show();
+                                        }
+                                        else{
+                                            bonus_hint = 1;
+                                            Toast.makeText(quizContext, "Ok !", Toast.LENGTH_SHORT).show();
+                                        }
+                                        prefEditor.remove("hint_value");
+                                        prefEditor.putInt("hint_value", pref.getInt("hint_value",-1)+bonus_hint);
+                                        prefEditor.apply();
+
                                         sqlt.updateResult(itemFilter, "success");
                                         sqlt.updateOption(itemFilter, "");
                                         Intent intent = getIntent();
@@ -284,65 +313,7 @@ public class QuizActivity extends AppCompatActivity {
                                         v.vibrate(500);
                                         Toast.makeText(quizContext, "Sorry Wrong Answer !", Toast.LENGTH_SHORT).show();
                                     }
-                                //}
                             }
-
-
-//                            if (answerList.indexOf(itemFilt) < 0) {
-//                                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-//                                v.vibrate(500);
-//                                Integer hNo = getCurrentHangNo();
-//                                Integer hNos = hNo + 1;
-//                                warningMessage(hNos);
-//                                optionList.set(position, "");
-//                                optionAdapter = new QuizOptionAdapter(quizContext, optionList);
-//                                optionRecyclerView.setAdapter(optionAdapter);
-//                                String remOption = "";
-//                                for (String s : optionList) {
-//                                    remOption += s;
-//                                }
-//                                sqlt.updateHang(itemFilter, hNos);
-//                                sqlt.updateOption(itemFilter, remOption);
-//                                item_detail = sqlt.getQuiz(itemFilter);
-//                                //setHangImage(hNos);
-//
-//
-//                            } else {
-//                                for (String chara : answerList) {
-//                                    int choosedNo = answerList.indexOf(itemFilt);
-//                                    if (choosedNo >= 0) {
-//                                        emptyAnswerList.set(choosedNo, itemFilt);
-//                                        answerList.set(choosedNo, "");
-//                                    }
-//                                }
-//                                optionList.set(position, "");
-//                                String remOption = "";
-//                                for (String s : optionList) {
-//                                    remOption += s;
-//                                }
-//                                sqlt.updateOption(itemFilter, remOption);
-//                                String ansList = "";
-//                                for (String s : emptyAnswerList) {
-//                                    ansList += s;
-//                                }
-//                                sqlt.updateCorrectTry(itemFilter, ansList);
-//                                optionAdapter = new QuizOptionAdapter(quizContext, optionList);
-//                                optionRecyclerView.setAdapter(optionAdapter);
-//                                answerAdapter = new QuizAnswerAdapter(quizContext, emptyAnswerList);
-//                                answerRecyclerView.setAdapter(answerAdapter);
-//
-//                                // insert success in database if emptyAnswerList = answerList
-//                                if (answerCheck.containsAll(emptyAnswerList) && emptyAnswerList.containsAll(answerCheck)) {
-//                                    //here update database
-//                                    Toast.makeText(quizContext, "success", Toast.LENGTH_SHORT).show();
-//                                    sqlt.updateResult(itemFilter, "success");
-//                                    sqlt.updateOption(itemFilter, "");
-//                                    Intent intent = getIntent();
-//                                    finish();
-//                                    startActivity(intent);
-//                                }
-//
-//                            }
                         }
                     }
 
@@ -422,6 +393,20 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+        quizPrevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPrevious();
+            }
+        });
+
+        quizNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showNext();
+            }
+        });
+
 
 
 //
@@ -450,6 +435,37 @@ public class QuizActivity extends AppCompatActivity {
         showSuccessImage();
     }
 
+    private void showPrevious() {
+        item_detail = sqlt.getQuiz(itemFilter);
+        item_next = sqlt.getPreviousQuiz(item_detail.get(0).grp_id,item_detail.get(0).id);
+        if(item_next.size() <= 0){
+            Toast.makeText(quizContext,"No logo to solve previous to it. Check next !",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            String itemFilter = item_next.get(0).item_id;
+            Intent detailI = new Intent(QuizActivity.this, QuizActivity.class);
+            detailI.putExtra("itemFilter", itemFilter);
+            startActivity(detailI);
+        }
+
+    }
+
+    private void showNext() {
+        item_detail = sqlt.getQuiz(itemFilter);
+        item_next = sqlt.getNextQuiz(item_detail.get(0).grp_id,item_detail.get(0).id);
+        if(item_next.size() <= 0){
+            Toast.makeText(quizContext,"No logo to solve next to it. Check previous !",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            String itemFilter = item_next.get(0).item_id;
+            Intent detailI = new Intent(QuizActivity.this, QuizActivity.class);
+            detailI.putExtra("itemFilter", itemFilter);
+            startActivity(detailI);
+        }
+    }
+
+
+
 
     private void showHelpHint() {
         int k = pref.getInt("hint_value",-1);
@@ -459,6 +475,7 @@ public class QuizActivity extends AppCompatActivity {
             prefEditor.putInt("hint_value", k);
             prefEditor.apply();
         showHintMessage("hint_answer");
+            setToolbarTitle();
         }
         else{
             Toast.makeText(quizContext,"not enough hint",Toast.LENGTH_SHORT).show();
@@ -469,9 +486,78 @@ public class QuizActivity extends AppCompatActivity {
         int k = pref.getInt("hint_value",-1);
         k = k-1;
         if(k>=0) {
-            prefEditor.remove("hint_value");
-            prefEditor.putInt("hint_value", k);
-            prefEditor.apply();
+
+            List<Integer> remPosition = new ArrayList<>();
+            int pos1 = 0;
+            for(String s : emptyAnswerList){
+                if(s.matches("^[0-9]$")){
+                    remPosition.add(pos1);
+                }
+                pos1++;
+            }
+            Random rand = new Random();
+            int ranNumber = rand.nextInt(remPosition.size());
+            int ranElement = remPosition.get(ranNumber);
+
+            if(optionList.contains(answerList.get(ranElement))){
+
+
+
+
+            emptyAnswerList.set(ranElement, answerList.get(ranElement));
+            String ansList = "";
+            for (String s : emptyAnswerList) {
+                ansList += s;
+            }
+
+            int matchedPostition = 0;
+            for (String s : optionList) {
+                if(s.matches(answerList.get(ranElement))){
+                    break;
+                }
+                matchedPostition = matchedPostition +1;
+            }
+
+
+            optionList.set(matchedPostition, "1");
+            String remOption = "";
+            for (String s : optionList) {
+                remOption += s;
+            }
+            optionAdapter = new QuizOptionAdapter(quizContext, optionList);
+            optionRecyclerView.setAdapter(optionAdapter);
+            answerAdapter = new QuizAnswerAdapter(quizContext, emptyAnswerList);
+            answerRecyclerView.setAdapter(answerAdapter);
+            //chooseNo += 1;
+            sqlt.updateCorrectTry(itemFilter, ansList);
+            sqlt.updateOption(itemFilter, remOption);
+            // insert success in database if emptyAnswerList = answerList
+            if (answerCheck.equals(emptyAnswerList)) {
+                //if (answerCheck.containsAll(emptyAnswerList) && emptyAnswerList.containsAll(answerCheck)) {
+                //here update database
+                Toast.makeText(quizContext, "Excellent !", Toast.LENGTH_SHORT).show();
+                sqlt.updateResult(itemFilter, "success");
+                sqlt.updateOption(itemFilter, "");
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+            }
+            if(remPosition.size() == 1 && !answerCheck.equals(emptyAnswerList)) {
+                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                v.vibrate(500);
+                Toast.makeText(quizContext, "Sorry Wrong Answer !", Toast.LENGTH_SHORT).show();
+            }
+                prefEditor.remove("hint_value");
+                prefEditor.putInt("hint_value", k);
+                prefEditor.apply();
+            }
+            else
+            {
+                Toast.makeText(quizContext,"no matching found",Toast.LENGTH_SHORT).show();
+            }
+            setToolbarTitle();
+
+
             //showHintMessage("hint_answer");
         }
         else{
@@ -498,6 +584,7 @@ public class QuizActivity extends AppCompatActivity {
             sb.append(c);
 
         sqlt.updateOption(itemFilter,sb.toString());
+            setToolbarTitle();
         }
         else{
             Toast.makeText(quizContext,"not enough hint",Toast.LENGTH_SHORT).show();
@@ -521,7 +608,7 @@ public class QuizActivity extends AppCompatActivity {
             Intent intent = getIntent();
             finish();
             startActivity(intent);
-
+            setToolbarTitle();
 
             //showHintMessage("hint_answer");
         }
@@ -757,8 +844,27 @@ public class QuizActivity extends AppCompatActivity {
         iv.setImageResource(zd);
         if("success".equals(imageResult)) {
             TextView tv = (TextView) promptsView.findViewById(R.id.zoom_text);
+            TextView zoom_mesage = promptsView.findViewById(R.id.zoom_message);
+            Button continue_button = promptsView.findViewById(R.id.continue_quiz);
 
             tv.setText(item_detail.get(0).getProper_name().toString());
+            zoom_mesage.setText("Excellent");
+            continue_button.setVisibility(View.VISIBLE);
+            continue_button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    item_next = sqlt.getNextQuiz(item_detail.get(0).grp_id,item_detail.get(0).id);
+                    if(item_next.size() <= 0){
+                        Toast.makeText(quizContext,"All logos of this group is solved. Go to another group !",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        String itemFilter = item_next.get(0).item_id;
+                        Intent detailI = new Intent(QuizActivity.this, QuizActivity.class);
+                        detailI.putExtra("itemFilter", itemFilter);
+                        startActivity(detailI);
+                    }
+                }
+            });
         }
 
 
@@ -785,11 +891,6 @@ public class QuizActivity extends AppCompatActivity {
         alertDialog.getWindow().setLayout(width,height);
     }
 
-    public Integer getCurrentHangNo(){
-        item_hangNo = sqlt.getQuiz(itemFilter);
-        return item_hangNo.get(0).getHang_no();
-
-    }
 
 //    public void setHangImage(Integer hangNos){
 //        switch(hangNos){
@@ -1130,6 +1231,7 @@ public class QuizActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.back:
+                item_detail = sqlt.getQuiz(itemFilter);
                 if (item.isChecked()) item.setChecked(false);
                 else item.setChecked(true);
                 Intent mBack = new Intent(QuizActivity.this,ItemActivity.class);

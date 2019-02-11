@@ -26,12 +26,14 @@
     <Button
         android:id="@+id/home_start"
         android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/play_button"
         android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/home_options"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_title" />
@@ -39,17 +41,39 @@
     <Button
         android:id="@+id/home_options"
         android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="293dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/options_button"
         android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_start" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="@+id/home_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/play" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="@+id/home_options"
+        app:layout_constraintTop_toTopOf="@+id/home_options"
+        app:srcCompat="@drawable/setting" />
 
 
 </android.support.constraint.ConstraintLayout>
