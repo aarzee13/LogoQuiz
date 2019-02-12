@@ -52,6 +52,10 @@ public class QuizOptionAdapter extends RecyclerView.Adapter<QuizOptionAdapter.My
             holder.title.setImageResource(d1);
         }
 
+        if("&".equals(imageOption)){
+            holder.title.setImageResource(R.drawable.and);
+        }
+
 
             //holder.title.setText(itemOptionArray.get(position));
             //holder.title.setImageResource(R.drawable.a);

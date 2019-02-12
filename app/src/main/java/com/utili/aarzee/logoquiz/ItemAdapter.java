@@ -56,13 +56,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
             int co = itemContext.getResources().getIdentifier("correct","drawable",itemContext.getPackageName());
             holder.correctView.setImageResource(co);
         }
-        else if("hanged".equals(name.getResult().toString())){
-            String imageName = name.getItem_name().replace(' ','_');
-            int d = itemContext.getResources().getIdentifier(imageName,"drawable",itemContext.getPackageName());
-            holder.imgView.setImageResource(d);
-            int co = itemContext.getResources().getIdentifier("wrong","drawable",itemContext.getPackageName());
-            holder.correctView.setImageResource(co);
-        }
         else{
             String imageName = name.getItem_name().replace(' ','_');
             int d = itemContext.getResources().getIdentifier(imageName,"drawable",itemContext.getPackageName());

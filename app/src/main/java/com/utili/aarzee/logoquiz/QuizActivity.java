@@ -55,11 +55,6 @@ public class QuizActivity extends AppCompatActivity {
     ImageView restart;
     ImageView quizPrevious;
     ImageView quizNext;
-//    ImageView hangImage;
-//    Button quizHint1;
-//    Button quizHint2;
-//    Button quizLearn;
-//    Button quizRefresh;
     Context quizContext;
     RecyclerView optionRecyclerView;
     RecyclerView answerRecyclerView;
@@ -71,6 +66,8 @@ public class QuizActivity extends AppCompatActivity {
     List<String> answerList;
     List<String> answerCheck;
     List<String> emptyAnswerList;
+    List<String> answerCheckFinal;
+    List<String> emptyAnswerListFinal;
     AlertDialog alertDialog;
     String reference_try;
     String reference_options;
@@ -123,11 +120,6 @@ public class QuizActivity extends AppCompatActivity {
             helpSolve.setVisibility(View.INVISIBLE);
 
         }
-        //hangImage = (ImageView) findViewById(R.id.hang_image);
-        //quizHint1 = (Button) findViewById(R.id.quiz_hint1);
-        //quizHint2 = (Button) findViewById(R.id.quiz_hint2);
-        //quizLearn = (Button) findViewById(R.id.quiz_learn);
-        //quizRefresh = (Button) findViewById(R.id.quiz_refresh);
 
         Integer hangNo = item_detail.get(0).getHang_no();
         //setHangImage(hangNo);
@@ -200,7 +192,7 @@ public class QuizActivity extends AppCompatActivity {
                     public void onItemClick(View view, int position) {
                         if(!"success".equals(imageResult)){
                         String itemFilt = emptyAnswerList.get(position);
-                        if(itemFilt.matches("^[a-zA-Z]*$")) {
+                        if(itemFilt.matches("^[a-zA-Z&]*$")) {
                         clickedPositions = 0;
                         for(String s : optionList) {
                             if ("1".equals(s)) {
@@ -249,7 +241,9 @@ public class QuizActivity extends AppCompatActivity {
                         // do whatever
                         String itemFilt = optionList.get(position);
                         if(!"".equals(itemFilt)) {
-                            if(emptyAnswerList.size() > chooseNo) {
+                            emptyAnswerListFinal = new ArrayList<String>(emptyAnswerList);
+                            emptyAnswerListFinal.removeAll(Arrays.asList(" ",null));
+                            if(emptyAnswerListFinal.size() > chooseNo) {
                                 clickedPositions = 0;
                                 for(String s : emptyAnswerList){
                                     if(s.matches("^[0-9]$")){
@@ -308,7 +302,9 @@ public class QuizActivity extends AppCompatActivity {
                                         finish();
                                         startActivity(intent);
                                     }
-                                    if(chooseNo == answerCheck.size() && !answerCheck.equals(emptyAnswerList)) {
+                                    answerCheckFinal = new ArrayList<String>(answerCheck);
+                                    answerCheckFinal.removeAll(Arrays.asList(" ",null));
+                                    if(chooseNo == answerCheckFinal.size() && !answerCheck.equals(emptyAnswerList)) {
                                         Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                                         v.vibrate(500);
                                         Toast.makeText(quizContext, "Sorry Wrong Answer !", Toast.LENGTH_SHORT).show();
@@ -407,30 +403,6 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-
-
-//
-//        quizLearn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                showLearn();
-//            }
-//        });
-//
-//        quizRefresh.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                refreshData();
-//            }
-//        });
-
-//        quizImage1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                zoomImage();
-//            }
-//        });
-
 //        showSuccessFailImage();
         showSuccessImage();
     }
@@ -463,8 +435,6 @@ public class QuizActivity extends AppCompatActivity {
             startActivity(detailI);
         }
     }
-
-
 
 
     private void showHelpHint() {
@@ -573,7 +543,9 @@ public class QuizActivity extends AppCompatActivity {
             prefEditor.remove("hint_value");
             prefEditor.putInt("hint_value", k);
             prefEditor.apply();
-        String opt = item_detail.get(0).getItem_name();
+            item_detail = sqlt.getQuiz(itemFilter);
+        String opt = item_detail.get(0).getItem_name().replace(" ","");
+        String triedOption = item_detail.get(0).getReference_try();
         List<Character> characters = new ArrayList<Character>();
         for(char c:opt.toCharArray()){
             characters.add(c);
@@ -584,6 +556,10 @@ public class QuizActivity extends AppCompatActivity {
             sb.append(c);
 
         sqlt.updateOption(itemFilter,sb.toString());
+        sqlt.updateCorrectTry(itemFilter,triedOption);
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
             setToolbarTitle();
         }
         else{
@@ -1114,58 +1090,6 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-//    public void showSuccessFailImage(){
-//        item_detail = sqlt.getQuiz(itemFilter);
-//        if("hanged".equals(item_detail.get(0).getResult())){
-//            final LayoutInflater li = (LayoutInflater)QuizActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//            final View promptsView = li.inflate(R.layout.activity_success_fail, null);
-//
-//            mAdView = (AdView) promptsView.findViewById(R.id.successFailAdView);
-//            AdRequest adRequest = new AdRequest.Builder()
-//                    .build();
-//            //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
-//            //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
-//            mAdView.loadAd(adRequest);
-//            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-//                    promptsView.getContext());
-//
-//            // set prompts.xml to alertdialog builder
-//            alertDialogBuilder.setView(promptsView);
-//
-//            alertDialogBuilder.setPositiveButton("Try Again",
-//                    new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            refreshData();
-//                            alertDialog.dismiss();
-//
-//                        }
-//                    });
-//
-//            alertDialogBuilder.setOnKeyListener(new Dialog.OnKeyListener() {
-//                @Override
-//                public boolean onKey(DialogInterface arg0, int keyCode,
-//                                     KeyEvent event) {
-//                    // TODO Auto-generated method stub
-//                    if (keyCode == KeyEvent.KEYCODE_BACK) {
-//                        Intent a = new Intent(QuizActivity.this,ItemActivity.class);
-//                        a.putExtra("grpFilter",item_detail.get(0).getGrp_id());
-//                        startActivity(a);
-//                    }
-//                    return true;
-//                }
-//            });
-//
-//            // create alert dialog
-//            alertDialog = alertDialogBuilder.create();
-//            int width = (int)(getResources().getDisplayMetrics().widthPixels*1.1f);
-//            int height = (int)(getResources().getDisplayMetrics().heightPixels*0.9f);
-//
-//            // show it
-//            alertDialog.show();
-//            alertDialog.getWindow().setLayout(width,height);
-//        }
-//    }
-
     public void showSuccessImage(){
         item_detail = sqlt.getQuiz(itemFilter);
         if("success".equals(item_detail.get(0).getResult())){
@@ -1240,32 +1164,6 @@ public class QuizActivity extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-        }
-    }
-
-    public void warningMessage(int count){
-        switch (count){
-            case 1:
-                Toast.makeText(quizContext, "Wrong Guess! One Chance gone", Toast.LENGTH_SHORT).show();
-                break;
-            case 2:
-                Toast.makeText(quizContext, "Wrong Guess! Second Chance gone", Toast.LENGTH_SHORT).show();
-                break;
-            case 3:
-                Toast.makeText(quizContext, "Wrong Guess! Third Chance gone", Toast.LENGTH_SHORT).show();
-                break;
-            case 4:
-                Toast.makeText(quizContext, "Be Careful! Half way to be hanged", Toast.LENGTH_SHORT).show();
-                break;
-            case 5:
-                Toast.makeText(quizContext, "Wrong Guess! You are close to be hanged", Toast.LENGTH_SHORT).show();
-                break;
-            case 6:
-                Toast.makeText(quizContext, "Wrong Guess! Last Chance.", Toast.LENGTH_SHORT).show();
-                break;
-            case 7:
-                Toast.makeText(quizContext, "You are hanged !!!!", Toast.LENGTH_SHORT).show();
-                break;
         }
     }
 }

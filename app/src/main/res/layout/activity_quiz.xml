@@ -20,7 +20,7 @@
         app:layout_constraintStart_toEndOf="@+id/quiz_previous"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.421"
-        app:srcCompat="@drawable/click1" />
+        app:srcCompat="@drawable/click" />
 
     <ImageView
         android:id="@+id/quiz_image2"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toEndOf="@+id/quiz_image1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.421"
-        app:srcCompat="@drawable/click1" />
+        app:srcCompat="@drawable/click" />
 
     <ImageView
         android:id="@+id/quiz_image3"
@@ -52,7 +52,7 @@
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@+id/quiz_previous"
         app:layout_constraintTop_toBottomOf="@+id/quiz_image1"
-        app:srcCompat="@drawable/click1" />
+        app:srcCompat="@drawable/click" />
 
     <ImageView
         android:id="@+id/quiz_image4"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toStartOf="@+id/quiz_next"
         app:layout_constraintStart_toEndOf="@+id/quiz_image3"
         app:layout_constraintTop_toBottomOf="@+id/quiz_image2"
-        app:srcCompat="@drawable/click1" />
+        app:srcCompat="@drawable/click" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/answer_recyclerview"

@@ -50,6 +50,9 @@ public class QuizAnswerAdapter extends RecyclerView.Adapter<QuizAnswerAdapter.My
             int d1 = itemContext.getResources().getIdentifier(imageAnswer, "drawable", itemContext.getPackageName());
             holder.title.setImageResource(d1);
         }
+        if("&".equals(imageAnswer)){
+            holder.title.setImageResource(R.drawable.and);
+        }
             //holder.title.setText(emptyAnswerArray.get(position));
     }
 
