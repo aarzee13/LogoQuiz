@@ -21,6 +21,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -43,6 +45,7 @@ public class QuizActivity extends AppCompatActivity {
     ArrayList<Item_Model> item_details;
     ArrayList<Item_Model> item_detail_for_message;
     ArrayList<Item_Model> item_next;
+    ImageView quizImage;
     ImageView quizImage1;
     ImageView quizImage2;
     ImageView quizImage3;
@@ -84,6 +87,12 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //to remove title bar
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        //to remove notification bar
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_quiz);
 
 
@@ -99,6 +108,9 @@ public class QuizActivity extends AppCompatActivity {
         sqlt = new SqliteController(getApplicationContext());
         item_detail = sqlt.getQuiz(itemFilter);
 
+
+
+        quizImage = findViewById(R.id.main_image);
         quizImage1 = (ImageView) findViewById(R.id.quiz_image1);
         quizImage2 = (ImageView) findViewById(R.id.quiz_image2);
         quizImage3 = (ImageView) findViewById(R.id.quiz_image3);
@@ -128,10 +140,10 @@ public class QuizActivity extends AppCompatActivity {
         image3_status = item_detail.get(0).getImage3_status();
         image4_status = item_detail.get(0).getImage4_status();
         final String imageName = item_detail.get(0).getItem_name().replace(' ','_');
-        final String imageName1 = item_detail.get(0).getItem_name().replace(' ','_')+"1";
-        final String imageName2 = item_detail.get(0).getItem_name().replace(' ','_')+"2";
-        final String imageName3 = item_detail.get(0).getItem_name().replace(' ','_')+"3";
-        final String imageName4 = item_detail.get(0).getItem_name().replace(' ','_')+"4";
+//        final String imageName1 = item_detail.get(0).getItem_name().replace(' ','_')+"1";
+//        final String imageName2 = item_detail.get(0).getItem_name().replace(' ','_')+"2";
+//        final String imageName3 = item_detail.get(0).getItem_name().replace(' ','_')+"3";
+//        final String imageName4 = item_detail.get(0).getItem_name().replace(' ','_')+"4";
         String randomOption = item_detail.get(0).getOption();
         String correctTry = item_detail.get(0).getCorrect_try();
         reference_try = item_detail.get(0).getReference_try();
@@ -152,22 +164,34 @@ public class QuizActivity extends AppCompatActivity {
         emptyAnswerList = new ArrayList<String>(Arrays.asList(correctTryArray));
         emptyAnswerList.removeAll(Arrays.asList(""));
 
+        for(String s : emptyAnswerList){
+            if(s.matches("^[a-zA-Z&]$")){
+                chooseNo += 1;
+            }
+        }
+
 
 //        int d = quizContext.getResources().getIdentifier(imageName,"drawable",quizContext.getPackageName());
 //        quizImage1.setImageResource(d);
-        int d1 = quizContext.getResources().getIdentifier(imageName1,"drawable",quizContext.getPackageName());
-        quizImage1.setImageResource(d1);
-        final int d2 = quizContext.getResources().getIdentifier(imageName2,"drawable",quizContext.getPackageName());
+        int dm = quizContext.getResources().getIdentifier(imageName,"drawable",quizContext.getPackageName());
+        quizImage.setImageResource(dm);
+        quizImage1.setVisibility(View.INVISIBLE);
+//        int d1 = quizContext.getResources().getIdentifier(imageName1,"drawable",quizContext.getPackageName());
+//        quizImage1.setImageResource(d1);
+        //final int d2 = quizContext.getResources().getIdentifier(imageName2,"drawable",quizContext.getPackageName());
         if(image2_status == 1) {
-            quizImage2.setImageResource(d2);
+            quizImage2.setVisibility(View.INVISIBLE);
+            //quizImage2.setImageResource(d2);
         }
-        final int d3 = quizContext.getResources().getIdentifier(imageName3,"drawable",quizContext.getPackageName());
+        //final int d3 = quizContext.getResources().getIdentifier(imageName3,"drawable",quizContext.getPackageName());
         if(image3_status == 1) {
-            quizImage3.setImageResource(d3);
+            quizImage3.setVisibility(View.INVISIBLE);
+            //quizImage3.setImageResource(d3);
         }
-        final int d4 = quizContext.getResources().getIdentifier(imageName4,"drawable",quizContext.getPackageName());
+        //final int d4 = quizContext.getResources().getIdentifier(imageName4,"drawable",quizContext.getPackageName());
             if(image4_status == 1) {
-                quizImage4.setImageResource(d4);
+                quizImage4.setVisibility(View.INVISIBLE);
+                //quizImage4.setImageResource(d4);
             }
 
         optionRecyclerView = (RecyclerView) findViewById(R.id.option_recyclerview);
@@ -209,7 +233,12 @@ public class QuizActivity extends AppCompatActivity {
                         for (String s : optionList) {
                             remOption += s;
                         }
-                            emptyAnswerList.set(position, Integer.toString(position + 1));
+                            if(position+1 >=10){
+                                emptyAnswerList.set(position, Integer.toString((position+1)%10));
+                            }
+                            else{
+                                emptyAnswerList.set(position, Integer.toString(position + 1));
+                            }
                         String ansList = "";
                         for (String s : emptyAnswerList) {
                             ansList += s;
@@ -318,32 +347,41 @@ public class QuizActivity extends AppCompatActivity {
                     }
                 })
         );
-
-        quizImage1.setOnClickListener(new View.OnClickListener() {
+        quizImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showImage1(imageName1,imageResult);
+                showImage(imageName,imageResult);
             }
         });
+
+//        quizImage1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                showImage1(imageName1,imageResult);
+//            }
+//        });
 
         quizImage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showImage2(imageName2,d2,imageResult);
+                //showImage2(imageName,d2,imageResult);
+                showImage2(imageName,imageResult);
             }
         });
 
         quizImage3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showImage3(imageName3,d3,imageResult);
+                //showImage3(imageName,d3,imageResult);
+                showImage3(imageName,imageResult);
             }
         });
 
         quizImage4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showImage4(imageName4,d4,imageResult);
+                //showImage4(imageName,d4,imageResult);
+                showImage4(imageName,imageResult);
             }
         });
 
@@ -407,6 +445,8 @@ public class QuizActivity extends AppCompatActivity {
         showSuccessImage();
     }
 
+
+
     private void showPrevious() {
         item_detail = sqlt.getQuiz(itemFilter);
         item_next = sqlt.getPreviousQuiz(item_detail.get(0).grp_id,item_detail.get(0).id);
@@ -468,6 +508,27 @@ public class QuizActivity extends AppCompatActivity {
             Random rand = new Random();
             int ranNumber = rand.nextInt(remPosition.size());
             int ranElement = remPosition.get(ranNumber);
+            int remPosSize = remPosition.size();
+
+//            if(remPosition.size()>1){
+//                if(!optionList.contains(answerList.get(ranElement))){
+//                    remPosition.remove(ranNumber);
+//                    ranNumber = rand.nextInt(remPosition.size());
+//                    ranElement = remPosition.get(ranNumber);
+//                }
+//            }
+            if(remPosition.size()>1) {
+                do {
+                    if (!optionList.contains(answerList.get(ranElement))) {
+                        remPosition.remove(ranNumber);
+                        ranNumber = rand.nextInt(remPosition.size());
+                        ranElement = remPosition.get(ranNumber);
+
+                    }
+                    remPosSize--;
+                } while (remPosSize > 1);
+            }
+
 
             if(optionList.contains(answerList.get(ranElement))){
 
@@ -498,7 +559,7 @@ public class QuizActivity extends AppCompatActivity {
             optionRecyclerView.setAdapter(optionAdapter);
             answerAdapter = new QuizAnswerAdapter(quizContext, emptyAnswerList);
             answerRecyclerView.setAdapter(answerAdapter);
-            //chooseNo += 1;
+            chooseNo += 1;
             sqlt.updateCorrectTry(itemFilter, ansList);
             sqlt.updateOption(itemFilter, remOption);
             // insert success in database if emptyAnswerList = answerList
@@ -683,12 +744,21 @@ public class QuizActivity extends AppCompatActivity {
         alertDialog.getWindow().setLayout(width,height);
     }
 
+    private void showImage(String imageName, String imageResult) {
+        item_detail = sqlt.getQuiz(itemFilter);
+        if("success".equals(imageResult) ||(item_detail.get(0).image2_status == 1 && item_detail.get(0).image3_status == 1 && item_detail.get(0).image4_status == 1)) {
+            zoomImage(imageName);
+        }
+        else{
+            Toast.makeText(quizContext,"First open all hidden part of image.",Toast.LENGTH_SHORT).show();
+        }
+    }
 
     private void showImage1(String image1,String imageResult) {
         zoomImage(image1);
     }
 
-    private void showImage2(String image2,final int d2,String imageResult) {
+    private void showImage2(String image2,String imageResult) {
         item_detail = sqlt.getQuiz(itemFilter);
         image2_status = item_detail.get(0).getImage2_status();
         if(image2_status == 0 && "fail".equals(imageResult)) {
@@ -706,9 +776,11 @@ public class QuizActivity extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         //iv.setImageDrawable(drawable);
-                        quizImage2.setImageResource(d2);
+                        //quizImage2.setImageResource(d2);
+                        quizImage2.getResources().getDrawable(R.drawable.blank);
                         quizImage2.setRotationY(270f);
                         quizImage2.animate().rotationY(360f).setListener(null);
+                        quizImage2.setVisibility(View.INVISIBLE);
 
                     }
 
@@ -725,7 +797,7 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-    private void showImage3(String image3,final int d3,String imageResult) {
+    private void showImage3(String image3,String imageResult) {
         item_detail = sqlt.getQuiz(itemFilter);
         image3_status = item_detail.get(0).getImage3_status();
         if(image3_status == 0 && "fail".equals(imageResult)) {
@@ -743,10 +815,11 @@ public class QuizActivity extends AppCompatActivity {
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     //iv.setImageDrawable(drawable);
-                    quizImage3.setImageResource(d3);
+                    //quizImage3.setImageResource(d3);
+                    quizImage3.getResources().getDrawable(R.drawable.blank);
                     quizImage3.setRotationY(270f);
                     quizImage3.animate().rotationY(360f).setListener(null);
-
+                    quizImage3.setVisibility(View.INVISIBLE);
                 }
 
                 @Override
@@ -760,7 +833,7 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-    private void showImage4(String image4,final int d4,String imageResult) {
+    private void showImage4(String image4,String imageResult) {
 //        ObjectAnimator anim = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.anim.card_flip);
         //Animation anim = AnimationUtils.loadAnimation(this,R.anim.swing_up_right);
 //        ObjectAnimator anim = (ObjectAnimator) AnimatorInflater.loadAnimator(this, R.animator.card_flip);
@@ -787,10 +860,11 @@ public class QuizActivity extends AppCompatActivity {
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     //iv.setImageDrawable(drawable);
-                    quizImage4.setImageResource(d4);
+//                    quizImage4.setImageResource(d4);
+                    quizImage4.getResources().getDrawable(R.drawable.blank);
                     quizImage4.setRotationY(270f);
                     quizImage4.animate().rotationY(360f).setListener(null);
-
+                    quizImage4.setVisibility(View.INVISIBLE);
                 }
 
                 @Override
