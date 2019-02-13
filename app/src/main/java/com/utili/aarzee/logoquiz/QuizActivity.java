@@ -159,18 +159,15 @@ public class QuizActivity extends AppCompatActivity {
         quizImage1.setImageResource(d1);
         final int d2 = quizContext.getResources().getIdentifier(imageName2,"drawable",quizContext.getPackageName());
         if(image2_status == 1) {
-            quizImage2.setVisibility(View.INVISIBLE);
-            //quizImage2.setImageResource(d2);
+            quizImage2.setImageResource(d2);
         }
         final int d3 = quizContext.getResources().getIdentifier(imageName3,"drawable",quizContext.getPackageName());
         if(image3_status == 1) {
-            quizImage3.setVisibility(View.INVISIBLE);
-            //quizImage3.setImageResource(d3);
+            quizImage3.setImageResource(d3);
         }
         final int d4 = quizContext.getResources().getIdentifier(imageName4,"drawable",quizContext.getPackageName());
             if(image4_status == 1) {
-                quizImage4.setVisibility(View.INVISIBLE);
-                //quizImage4.setImageResource(d4);
+                quizImage4.setImageResource(d4);
             }
 
         optionRecyclerView = (RecyclerView) findViewById(R.id.option_recyclerview);
@@ -194,10 +191,7 @@ public class QuizActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(View view, int position) {
                         if(!"success".equals(imageResult)){
-//                            emptyAnswerListFinal = new ArrayList<String>(emptyAnswerList);
-//                            emptyAnswerListFinal.removeAll(Arrays.asList(" ",null));
                         String itemFilt = emptyAnswerList.get(position);
-                            //String itemFilt = emptyAnswerListFinal.get(position);
                         if(itemFilt.matches("^[a-zA-Z&]*$")) {
                         clickedPositions = 0;
                         for(String s : optionList) {
@@ -215,13 +209,7 @@ public class QuizActivity extends AppCompatActivity {
                         for (String s : optionList) {
                             remOption += s;
                         }
-                        if(position+1 >=10){
-                            emptyAnswerList.set(position, Integer.toString((position+1)%10));
-                        }
-                        else{
                             emptyAnswerList.set(position, Integer.toString(position + 1));
-                        }
-
                         String ansList = "";
                         for (String s : emptyAnswerList) {
                             ansList += s;
@@ -480,26 +468,6 @@ public class QuizActivity extends AppCompatActivity {
             Random rand = new Random();
             int ranNumber = rand.nextInt(remPosition.size());
             int ranElement = remPosition.get(ranNumber);
-            int remPosSize = remPosition.size();
-
-//            if(remPosition.size()>1){
-//                if(!optionList.contains(answerList.get(ranElement))){
-//                    remPosition.remove(ranNumber);
-//                    ranNumber = rand.nextInt(remPosition.size());
-//                    ranElement = remPosition.get(ranNumber);
-//                }
-//            }
-            if(remPosition.size()>1) {
-                do {
-                    if (!optionList.contains(answerList.get(ranElement))) {
-                        remPosition.remove(ranNumber);
-                        ranNumber = rand.nextInt(remPosition.size());
-                        ranElement = remPosition.get(ranNumber);
-
-                    }
-                    remPosSize--;
-                } while (remPosSize > 1);
-            }
 
             if(optionList.contains(answerList.get(ranElement))){
 
@@ -741,7 +709,6 @@ public class QuizActivity extends AppCompatActivity {
                         quizImage2.setImageResource(d2);
                         quizImage2.setRotationY(270f);
                         quizImage2.animate().rotationY(360f).setListener(null);
-                        quizImage2.setVisibility(View.INVISIBLE);
 
                     }
 
@@ -779,7 +746,7 @@ public class QuizActivity extends AppCompatActivity {
                     quizImage3.setImageResource(d3);
                     quizImage3.setRotationY(270f);
                     quizImage3.animate().rotationY(360f).setListener(null);
-                    quizImage3.setVisibility(View.INVISIBLE);
+
                 }
 
                 @Override
@@ -823,7 +790,7 @@ public class QuizActivity extends AppCompatActivity {
                     quizImage4.setImageResource(d4);
                     quizImage4.setRotationY(270f);
                     quizImage4.animate().rotationY(360f).setListener(null);
-                    quizImage4.setVisibility(View.INVISIBLE);
+
                 }
 
                 @Override
