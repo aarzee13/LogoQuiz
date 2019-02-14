@@ -202,6 +202,10 @@ public class SqliteController extends SQLiteOpenHelper {
                     item.wiki_link = cursor.getString(cursor.getColumnIndex("wiki_link"));
                     item.reference_try = cursor.getString(cursor.getColumnIndex("reference_try"));
                     item.proper_name = cursor.getString(cursor.getColumnIndex("proper_name"));
+                    item.image2_status = cursor.getInt(cursor.getColumnIndex("image2_status"));
+                    item.image3_status = cursor.getInt(cursor.getColumnIndex("image3_status"));
+                    item.image4_status = cursor.getInt(cursor.getColumnIndex("image4_status"));
+                    item.reference_options = cursor.getString(cursor.getColumnIndex("reference_options"));
                     cartList2.add(item);
                 } while (cursor.moveToNext());
             }
@@ -336,7 +340,10 @@ public class SqliteController extends SQLiteOpenHelper {
             ContentValues contentValues = new ContentValues();
             contentValues.put("result", "fail");
             contentValues.put("hang_no", 0);
-            contentValues.put("option", "abcdefghijklmnopqrstuvwxyz");
+            contentValues.put("image2_status",0);
+            contentValues.put("image3_status",0);
+            contentValues.put("image4_status",0);
+            contentValues.put("option", obj.getReference_options());
             contentValues.put("correct_try", obj.getReference_try());
 
             db.update("tbl_item", contentValues, "item_id ='"+obj.getItem_id()+"'", null);
