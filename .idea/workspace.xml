@@ -19,16 +19,520 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af496eff-24e5-415f-93b1-0e5c2f4b9d4e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_17_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_base_17_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_16_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_lite_17_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_gass_17_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_16_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jack_in_the_box.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jack_in_the_box1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jack_in_the_box1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jack_in_the_box_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jaguar.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jaguar_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/javascript.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/javascript_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/john_deere.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/john_deere_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jpmorgan_chase.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jpmorgan_chase_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jysk.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jysk_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kappa.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kappa_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kfc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kfc1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kfc1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kfc_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kodak.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kodak1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kodak1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/kodak_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/koenigsegg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/koenigsegg_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lacoste.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lacoste_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lamborghini.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lamborghini_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/land_rover.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/land_rover1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/land_rover1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/land_rover_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/latina_television.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/latina_television_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lays.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lays1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lays1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lays_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lego.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lego_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/levi_strauss_aanndd_co.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/levi_strauss_aanndd_co_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lexus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lexus_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lg_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/linux.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/linux_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lipton_tea.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lipton_tea1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lipton_tea1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lipton_tea_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/liteon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/liteon_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lloyds_bank.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lloyds_bank1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lloyds_bank1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lloyds_bank_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/louis_vuitton.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/louis_vuitton_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lucky_strike.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lucky_strike1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lucky_strike1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lucky_strike_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lufthansa.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lufthansa_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/maaza.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/maaza_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/maersk.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/maersk_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/maggi.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/maggi_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/magnum.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/magnum_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/manga_entertainment.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/manga_entertainment_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marks_aanndd_spencer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marlboro.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marlboro_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marvel.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marvel_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marvel_comic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/marvel_comic_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mastercard.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mastercard_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mazda.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mazda1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mazda1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mazda_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mcdonalds.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mcdonalds_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mercedesbenz.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mercedesbenz_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/messenger.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/messenger_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/metro_goldwyn_mayer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/metro_goldwyn_mayer_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mewe.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mewe_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/microsoft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/microsoft_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/microsoft_paint.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/microsoft_paint_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mini_cooper.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mini_cooper_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mirinda.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mirinda1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mirinda1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mirinda_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_earth.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_earth_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_international.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_international_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_universe.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_universe_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_world.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_world1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_world1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/miss_world_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mitsubishi.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mitsubishi_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/monster_cable.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/monster_cable_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/monster_energy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/monster_energy_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/monsters_inc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/monsters_inc_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mountain_dew.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mountain_dew1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mountain_dew1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mountain_dew_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mrf_tyres.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mrf_tyres_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mts.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mts_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mtv.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mtv_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nandos.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nandos_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/napster.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/napster_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nbc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nbc1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nbc1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nbc_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nelvana_international.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nelvana_international1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nelvana_international1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nelvana_international_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nescafe.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nescafe_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nestle.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nestle1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nestle1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nestle_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/netflix.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/netflix1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/netflix1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/netflix_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/neutrogena.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/neutrogena_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/new_balance.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/new_balance1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/new_balance1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/new_balance_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/new_world.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/new_world_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nickelodeon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nickelodeon_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nike.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nike_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nintendo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nintendo_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nivea.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nivea1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nivea1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nivea_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nokia.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nokia_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/novation.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/novation_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nvidia.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nvidia_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/olympics.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/olympics_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oneworld.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oneworld_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oral_b.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oral_b_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oreo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oreo1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oreo1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/oreo_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/osim.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/osim1.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/osim1_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/osim_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/owncloud.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/owncloud_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paannddg.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paannddg_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/panasonic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/panasonic_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/panda_express.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/panda_express_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/papa_johns.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/papa_johns_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paralympic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paralympic_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paralympic_games.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/paralympic_games_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/patagonia.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/patagonia_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pepsi.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pepsi1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pepsi1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pepsi_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pepsi_cola.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pepsi_cola_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/peugeot.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/peugeot_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/philips.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/philips1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/philips1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/philips_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/picapon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/picapon_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/picasa.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/picasa_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pioneer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pioneer_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/piramal_group.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/piramal_group_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pizza_hut.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pizza_hut1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pizza_hut1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pizza_hut2.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pizza_hut2_ans.PNG" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pizza_hut_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/playboy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/playboy_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/playstation.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/playstation_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/porsche.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/porsche_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pringles.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pringles1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pringles1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pringles_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pronto.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pronto_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/purex.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/purex_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/quaker_oats.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/quaker_oats_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/qualcomm.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/qualcomm_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rainmaker.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rainmaker_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rayban.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rayban_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/razer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/razer_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/red_bull.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/red_bull_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rede_globo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rede_globo1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rede_globo1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rede_globo_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/repsol.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/repsol1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/repsol1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/repsol_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rio_tinto.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rio_tinto_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roland.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roland_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rossignol.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rossignol_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/royal_bank_of_scotland.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/royal_bank_of_scotland_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/samsung.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/samsung1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/samsung1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/samsung_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sanyo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sanyo_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sap.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sap_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shasun_pharma.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shasun_pharma_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shell.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shell_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sheraton.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sheraton_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/silicon_aanndd_synapse.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/silicon_aanndd_synapse_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skechers.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skechers1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skechers1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skechers_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skullcandy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skullcandy_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skype.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/skype_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/slayer.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/slayer_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/smile_train.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/smile_train1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/smile_train1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/smile_train_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snapchat.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snapchat1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snapchat1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snapchat_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snickers.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snickers_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sonos.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sonos_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sony.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sony_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sony_pictures.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sony_pictures_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/soundcloud.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/soundcloud_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spartan_helmets.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spartan_helmets_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spinx.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spinx_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spotify.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spotify1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spotify1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spotify_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sprite.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sprite_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spykar.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spykar_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stanley.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stanley_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_alliance.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_alliance_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_tv.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/star_tv_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/starbucks.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/starbucks1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/starbucks1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/starbucks_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/steam.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/steam_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/strides.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/strides_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/studio_b.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/studio_b_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/subway.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/subway1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/subway1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/subway_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sun_microsystems.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sun_microsystems_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/superdry.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/superdry_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/supreme.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/supreme_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/taco_bell.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/taco_bell1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/taco_bell1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/taco_bell_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tannoy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tannoy_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tesla.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tesla_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/the_hundreds.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/the_hundreds_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tic_tac.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tic_tac_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tide.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tide1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tide1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tide_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tieto.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tieto_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tiktok.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tiktok_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/timberland.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/timberland_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toshiba.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toshiba_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/touchstone.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/touchstone_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toyota.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toyota1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toyota1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/toyota_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tristar.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tristar_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/trivago.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/trivago1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/trivago1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/trivago_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/twitch.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/twitch_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/twitter.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/twitter_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tyson.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tyson_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uber.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uber_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ubisoft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ubisoft_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uno.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uno1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uno1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uno_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ups.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ups_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uspa.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/uspa_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/viacom.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/viacom_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/vine.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/vine_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/viper.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/viper_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/virgin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/virgin_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/visa.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/visa1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/visa1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/visa_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/vodafone.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/vodafone_ans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/volkswagen.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/volkswagen_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/watsons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/watsons_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/whatsapp.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/whatsapp_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/whirlpool.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/whirlpool_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wikipedia.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wikipedia_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wild_turkey.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wild_turkey_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/woophy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/woophy_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wwf.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wwf1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wwf1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wwf_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xbox.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/xbox_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yakult.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yakult_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yamaha.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yamaha_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yara.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yara1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yara1_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yara_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ysl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ysl_ans.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/zara.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/zara_ans.png" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/db_quiz.db" afterPath="$PROJECT_DIR$/app/src/main/assets/db_quiz.db" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HintMessageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HintMessageActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HomeActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Item_Model.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Item_Model.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_hint_message.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_hint_message.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home_zoom.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home_zoom.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_instructions.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_instructions.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_options.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_options.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +549,23 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LogoQuiz" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -54,42 +574,75 @@
       <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="94" column="60" lean-forward="false" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
+            <state relative-caret-position="366">
+              <caret line="1154" column="84" lean-forward="false" selection-start-line="1154" selection-start-column="84" selection-end-line="1154" selection-end-column="84" />
               <folding>
-                <element signature="class#8670:11055" expanded="false" />
+                <element signature="class#9666:12051" expanded="false" />
+                <element signature="e#17730#17899#0" expanded="true" />
+                <element signature="e#17898#17899#0" expanded="true" />
+                <element signature="e#18166#18392#0" expanded="true" />
+                <element signature="e#18391#18392#0" expanded="true" />
+                <element signature="e#18434#18660#0" expanded="true" />
+                <element signature="e#18659#18660#0" expanded="true" />
+                <element signature="e#18702#18928#0" expanded="true" />
+                <element signature="e#18927#18928#0" expanded="true" />
+                <element signature="e#18968#19128#0" expanded="true" />
+                <element signature="e#19127#19128#0" expanded="true" />
+                <element signature="e#19170#19333#0" expanded="true" />
+                <element signature="e#19332#19333#0" expanded="true" />
+                <element signature="e#19374#19535#0" expanded="true" />
+                <element signature="e#19534#19535#0" expanded="true" />
+                <element signature="e#19576#19737#0" expanded="true" />
+                <element signature="e#19736#19737#0" expanded="true" />
+                <element signature="e#19776#19926#0" expanded="true" />
+                <element signature="e#19925#19926#0" expanded="true" />
+                <element signature="e#19963#20111#0" expanded="true" />
+                <element signature="e#20110#20111#0" expanded="true" />
+                <element signature="e#20155#20306#0" expanded="true" />
+                <element signature="e#20305#20306#0" expanded="true" />
+                <element signature="e#20346#20493#0" expanded="true" />
+                <element signature="e#20492#20493#0" expanded="true" />
                 <element signature="method#showPrevious#0;class#QuizActivity#0" expanded="false" />
-                <element signature="method#showNext#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#showHelpHint#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#showHelpErase#0;class#QuizActivity#0" expanded="false" />
+                <element signature="e#26552#26563#0" expanded="true" />
                 <element signature="method#showHelpSolve#0;class#QuizActivity#0" expanded="false" />
-                <element signature="e#39049#39097#0" expanded="false" />
+                <element signature="e#30643#31303#0" expanded="true" />
+                <element signature="e#31302#31303#0" expanded="true" />
+                <element signature="e#31428#31647#0" expanded="true" />
+                <element signature="e#31646#31647#0" expanded="true" />
+                <element signature="e#38472#39240#0" expanded="true" />
+                <element signature="e#39239#39240#0" expanded="true" />
+                <element signature="e#39543#39746#0" expanded="true" />
+                <element signature="e#39745#39746#0" expanded="true" />
+                <element signature="e#40107#40155#0" expanded="false" />
+                <element signature="e#49025#49260#0" expanded="true" />
+                <element signature="e#49259#49260#0" expanded="true" />
+                <element signature="e#51672#51879#0" expanded="true" />
+                <element signature="e#51878#51879#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_home.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="OptionsActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="86" column="14" lean-forward="false" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="-306">
+              <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+              <folding>
+                <element signature="e#5524#5731#0" expanded="true" />
+                <element signature="e#5730#5731#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_home_zoom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home_zoom.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="ZoomActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="79" column="35" lean-forward="false" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+            <state relative-caret-position="289">
+              <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -101,89 +654,48 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cards_list.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cards_list.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cards_options.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cards_options.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HomeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+            <state relative-caret-position="459">
+              <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
-                <element signature="e#2832#2960#0" expanded="true" />
-                <element signature="e#2959#2960#0" expanded="true" />
-                <element signature="e#3001#3149#0" expanded="true" />
-                <element signature="e#3148#3149#0" expanded="true" />
-                <element signature="e#3188#3338#0" expanded="true" />
-                <element signature="e#3337#3338#0" expanded="true" />
-                <element signature="e#3377#3526#0" expanded="true" />
-                <element signature="e#3525#3526#0" expanded="true" />
-                <element signature="e#3565#3713#0" expanded="true" />
-                <element signature="e#3712#3713#0" expanded="true" />
+                <element signature="e#1511#1536#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstructionsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java">
+      <file leaf-file-name="activity_zoom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+            <state relative-caret-position="284">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java">
+      <file leaf-file-name="WikiActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+            <state relative-caret-position="306">
+              <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqliteController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java">
+      <file leaf-file-name="activity_wiki.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="204" column="95" lean-forward="true" selection-start-line="204" selection-start-column="95" selection-end-line="204" selection-end-column="95" />
+            <state relative-caret-position="352">
+              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding>
-                <element signature="method#getSuccessList#0;class#SqliteController#0" expanded="false" />
-                <element signature="method#updateHang#0;class#SqliteController#0" expanded="false" />
-                <element signature="method#updateResult#0;class#SqliteController#0" expanded="false" />
+                <element signature="e#1267#1292#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -209,6 +721,8 @@
       <find>visib</find>
       <find>#</find>
       <find>chooseno</find>
+      <find>&quot;and&quot;</find>
+      <find>zoom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2230,8 +2744,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Group_Model.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/RecyclerItemClickListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/swing_up_left.xml" />
@@ -2240,47 +2752,49 @@
         <option value="$PROJECT_DIR$/app/build/generated/source/r/debug/com/utili/aarzee/logoquiz/R.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/push_left_in.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/cards_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/card_flip.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/animator/card_flip.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_hint_message.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_no_internet.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Item_Model.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/back_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/options_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/play_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_toolbar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizOptionAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizAnswerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/reset_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/home_button.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_options.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_instructions.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HintMessageActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/NoInternetActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/cards_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/tags_rounded_corner.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/cards_answer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/cards_options.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Item_Model.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/cards_item.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_instructions.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_options.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home_zoom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HintMessageActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_hint_message.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml" />
       </list>
     </option>
   </component>
@@ -2322,10 +2836,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2355,14 +2869,6 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LogoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LogoQuiz" type="b2602c69:ProjectViewProjectNode" />
@@ -2425,19 +2931,23 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="device.picker.selection" value="Nexus_5X_API_27" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="device.picker.selection" value="4bd0e474" />
     <property name="DEBUGGABLE_DEVICE" value="Nexus_5X_API_27 [emulator-5554]" />
     <property name="DEBUGGABLE_PROCESS" value="com.utili.aarzee.logoquiz" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
     <property name="DEBUGGER_ID" value="Auto" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\anim" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\drawable" />
+      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\layout" />
+      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\assets" />
+      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\java\com\utili\aarzee\logoquiz" />
+      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\menu" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.utili.aarzee.logoquiz" />
@@ -2445,12 +2955,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.utili.aarzee.logoquiz" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\drawable" />
-      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\layout" />
-      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\assets" />
-      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\java\com\utili\aarzee\logoquiz" />
-      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\menu" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\an\unit_converter_final\LogoQuiz\app\src\main\res\anim" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2546,6 +3052,53 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="LogoQuiz" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="LogoQuiz" />
+      <envs />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <envs />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -2697,34 +3250,53 @@
       <option name="project" value="LOCAL" />
       <updated>1550053643076</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="14th feb commit">
+      <created>1550145870459</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550145870459</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5533981" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43134534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21203439" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21418338" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18266475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.370319" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2732,8 +3304,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1969914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2748,46 +3318,20 @@
     <MESSAGE value="10th feb commit" />
     <MESSAGE value="11th feb commit" />
     <MESSAGE value="13th feb commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="13th feb commit" />
+    <MESSAGE value="14th feb commit" />
+    <MESSAGE value="24th feb commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="24th feb commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="219" />
+      <option name="time" value="228" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/animator/card_flip.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_help_message.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/refresh.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_hint_message.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/back_menu.xml">
@@ -2807,50 +3351,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_no_internet.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/play.jpg" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/play.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cards_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_toolbar.xml">
@@ -2871,62 +3375,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="212" column="61" lean-forward="false" selection-start-line="212" selection-start-column="61" selection-end-line="212" selection-end-column="61" />
-          <folding>
-            <element signature="method#onBindViewHolder#0;class#GroupAdapter#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Item_Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizOptionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizAnswerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/play_button.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="49" lean-forward="false" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -2975,69 +3427,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_options.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/home_button.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_instructions.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding>
-            <element signature="e#515#533#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HintMessageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3049,35 +3442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="60" lean-forward="false" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/tags_rounded_corner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3088,23 +3456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="94" column="60" lean-forward="false" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
-          <folding>
-            <element signature="class#8670:11055" expanded="false" />
-            <element signature="method#showPrevious#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#showNext#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#showHelpHint#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#showHelpErase#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#showHelpSolve#0;class#QuizActivity#0" expanded="false" />
-            <element signature="e#39049#39097#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3119,14 +3470,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizOptionAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="404">
+          <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizAnswerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="212" column="61" lean-forward="false" selection-start-line="212" selection-start-column="61" selection-end-line="212" selection-end-column="61" />
+          <folding>
+            <element signature="method#onBindViewHolder#0;class#GroupAdapter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="51" column="89" lean-forward="false" selection-start-line="51" selection-start-column="89" selection-end-line="51" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/Item_Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="200" column="34" lean-forward="false" selection-start-line="200" selection-start-column="34" selection-end-line="200" selection-end-column="34" />
+          <folding>
+            <element signature="e#1313#1314#0" expanded="false" />
+            <element signature="e#1342#1343#0" expanded="false" />
+            <element signature="e#4169#4170#0" expanded="false" />
+            <element signature="e#4210#4211#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2737">
+          <caret line="209" column="108" lean-forward="false" selection-start-line="209" selection-start-column="108" selection-end-line="209" selection-end-column="108" />
+          <folding>
+            <element signature="e#937#950#0" expanded="false" />
+            <element signature="e#1013#1025#0" expanded="false" />
+            <element signature="method#getSuccessList#0;class#SqliteController#0" expanded="false" />
+            <element signature="method#updateHang#0;class#SqliteController#0" expanded="false" />
+            <element signature="method#updateResult#0;class#SqliteController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3141,71 +3542,302 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cards_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/084b8ab7fea1bdad916305a26c04196a/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_instructions.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#1870#1895#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_no_internet.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_options.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="63" selection-end-column="42" />
+          <folding>
+            <element signature="e#2010#2035#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home_zoom.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="35" lean-forward="false" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+        <state relative-caret-position="375">
+          <caret line="112" column="46" lean-forward="false" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
+          <folding>
+            <element signature="e#4540#4565#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/GroupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="44" column="10" lean-forward="false" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="14" lean-forward="false" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+        <state relative-caret-position="425">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ItemActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+        <state relative-caret-position="323">
+          <caret line="82" column="27" lean-forward="false" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="106" column="46" lean-forward="false" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
           <folding>
-            <element signature="e#2832#2960#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3001#3149#0" expanded="true" />
-            <element signature="e#3148#3149#0" expanded="true" />
-            <element signature="e#3188#3338#0" expanded="true" />
-            <element signature="e#3337#3338#0" expanded="true" />
-            <element signature="e#3377#3526#0" expanded="true" />
-            <element signature="e#3525#3526#0" expanded="true" />
-            <element signature="e#3565#3713#0" expanded="true" />
-            <element signature="e#3712#3713#0" expanded="true" />
+            <element signature="e#4249#4274#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/InstructionsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/HintMessageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_hint_message.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding>
+            <element signature="e#3401#3426#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="250" column="35" lean-forward="false" selection-start-line="250" selection-start-column="25" selection-end-line="250" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="88" lean-forward="false" selection-start-line="3" selection-start-column="88" selection-end-line="3" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_zoom.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/OptionsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+        <state relative-caret-position="-306">
+          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+          <folding>
+            <element signature="e#5524#5731#0" expanded="true" />
+            <element signature="e#5730#5731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_group.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="e#1511#1536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/QuizActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="1154" column="84" lean-forward="false" selection-start-line="1154" selection-start-column="84" selection-end-line="1154" selection-end-column="84" />
+          <folding>
+            <element signature="class#9666:12051" expanded="false" />
+            <element signature="e#17730#17899#0" expanded="true" />
+            <element signature="e#17898#17899#0" expanded="true" />
+            <element signature="e#18166#18392#0" expanded="true" />
+            <element signature="e#18391#18392#0" expanded="true" />
+            <element signature="e#18434#18660#0" expanded="true" />
+            <element signature="e#18659#18660#0" expanded="true" />
+            <element signature="e#18702#18928#0" expanded="true" />
+            <element signature="e#18927#18928#0" expanded="true" />
+            <element signature="e#18968#19128#0" expanded="true" />
+            <element signature="e#19127#19128#0" expanded="true" />
+            <element signature="e#19170#19333#0" expanded="true" />
+            <element signature="e#19332#19333#0" expanded="true" />
+            <element signature="e#19374#19535#0" expanded="true" />
+            <element signature="e#19534#19535#0" expanded="true" />
+            <element signature="e#19576#19737#0" expanded="true" />
+            <element signature="e#19736#19737#0" expanded="true" />
+            <element signature="e#19776#19926#0" expanded="true" />
+            <element signature="e#19925#19926#0" expanded="true" />
+            <element signature="e#19963#20111#0" expanded="true" />
+            <element signature="e#20110#20111#0" expanded="true" />
+            <element signature="e#20155#20306#0" expanded="true" />
+            <element signature="e#20305#20306#0" expanded="true" />
+            <element signature="e#20346#20493#0" expanded="true" />
+            <element signature="e#20492#20493#0" expanded="true" />
+            <element signature="method#showPrevious#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#showHelpHint#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#showHelpErase#0;class#QuizActivity#0" expanded="false" />
+            <element signature="e#26552#26563#0" expanded="true" />
+            <element signature="method#showHelpSolve#0;class#QuizActivity#0" expanded="false" />
+            <element signature="e#30643#31303#0" expanded="true" />
+            <element signature="e#31302#31303#0" expanded="true" />
+            <element signature="e#31428#31647#0" expanded="true" />
+            <element signature="e#31646#31647#0" expanded="true" />
+            <element signature="e#38472#39240#0" expanded="true" />
+            <element signature="e#39239#39240#0" expanded="true" />
+            <element signature="e#39543#39746#0" expanded="true" />
+            <element signature="e#39745#39746#0" expanded="true" />
+            <element signature="e#40107#40155#0" expanded="false" />
+            <element signature="e#49025#49260#0" expanded="true" />
+            <element signature="e#49259#49260#0" expanded="true" />
+            <element signature="e#51672#51879#0" expanded="true" />
+            <element signature="e#51878#51879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/ZoomActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/SqliteController.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/utili/aarzee/logoquiz/WikiActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="204" column="95" lean-forward="true" selection-start-line="204" selection-start-column="95" selection-end-line="204" selection-end-column="95" />
+        <state relative-caret-position="306">
+          <caret line="32" column="43" lean-forward="false" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wiki.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
           <folding>
-            <element signature="method#getSuccessList#0;class#SqliteController#0" expanded="false" />
-            <element signature="method#updateHang#0;class#SqliteController#0" expanded="false" />
-            <element signature="method#updateResult#0;class#SqliteController#0" expanded="false" />
+            <element signature="e#1267#1292#0" expanded="true" />
           </folding>
         </state>
       </provider>

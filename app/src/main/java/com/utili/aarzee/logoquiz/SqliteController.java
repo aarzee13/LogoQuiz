@@ -167,6 +167,7 @@ public class SqliteController extends SQLiteOpenHelper {
                     item.image3_status = cursor.getInt(cursor.getColumnIndex("image3_status"));
                     item.image4_status = cursor.getInt(cursor.getColumnIndex("image4_status"));
                     item.reference_options = cursor.getString(cursor.getColumnIndex("reference_options"));
+                    item.item_name_filtered = cursor.getString(cursor.getColumnIndex("item_name_filtered"));
                     cartList2.add(item);
                 } while (cursor.moveToNext());
             }
@@ -206,6 +207,7 @@ public class SqliteController extends SQLiteOpenHelper {
                     item.image3_status = cursor.getInt(cursor.getColumnIndex("image3_status"));
                     item.image4_status = cursor.getInt(cursor.getColumnIndex("image4_status"));
                     item.reference_options = cursor.getString(cursor.getColumnIndex("reference_options"));
+                    item.item_name_filtered = cursor.getString(cursor.getColumnIndex("item_name_filtered"));
                     cartList2.add(item);
                 } while (cursor.moveToNext());
             }

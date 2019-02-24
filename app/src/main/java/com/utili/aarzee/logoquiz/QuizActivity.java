@@ -31,6 +31,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -83,6 +88,8 @@ public class QuizActivity extends AppCompatActivity {
     String imageResult;
     SharedPreferences pref;
     SharedPreferences.Editor prefEditor;
+    private AdView mAdView;
+    InterstitialAd interstitial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +101,15 @@ public class QuizActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_quiz);
+
+        //MobileAds.initialize(this,"ca-app-pub-5858135794717325~9434563129");
+        mAdView = (AdView) findViewById(R.id.quizAdView);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .build();
+
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        mAdView.loadAd(adRequest);
 
 
         pref = PreferenceManager.getDefaultSharedPreferences(QuizActivity.this.getApplication().getApplicationContext());
@@ -139,7 +155,8 @@ public class QuizActivity extends AppCompatActivity {
         image2_status = item_detail.get(0).getImage2_status();
         image3_status = item_detail.get(0).getImage3_status();
         image4_status = item_detail.get(0).getImage4_status();
-        final String imageName = item_detail.get(0).getItem_name().replace(' ','_');
+        final String imageName = item_detail.get(0).getItem_name().replace(' ','_').replace("&","aanndd");
+        final String imageNameFiltered = item_detail.get(0).getItem_name_filtered().replace(' ','_').replace("&","aanndd");
 //        final String imageName1 = item_detail.get(0).getItem_name().replace(' ','_')+"1";
 //        final String imageName2 = item_detail.get(0).getItem_name().replace(' ','_')+"2";
 //        final String imageName3 = item_detail.get(0).getItem_name().replace(' ','_')+"3";
@@ -149,7 +166,8 @@ public class QuizActivity extends AppCompatActivity {
         reference_try = item_detail.get(0).getReference_try();
         reference_options = item_detail.get(0).getReference_options();
 
-        String[] imageNameArray = imageName.replace('_',' ').split("");
+
+        String[] imageNameArray = imageNameFiltered.replace('_',' ').replace("aanndd","&").split("");
         String[] imageOptionArray = randomOption.split("");
         String[] correctTryArray = correctTry.split("");
 
@@ -656,6 +674,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void showHintMessage(String hintType){
+        loadInterstitialHintAd();
         final LayoutInflater li = (LayoutInflater)QuizActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final View promptsView = li.inflate(R.layout.activity_hint_message, null);
         final String hType = hintType;
@@ -747,7 +766,7 @@ public class QuizActivity extends AppCompatActivity {
     private void showImage(String imageName, String imageResult) {
         item_detail = sqlt.getQuiz(itemFilter);
         if("success".equals(imageResult) ||(item_detail.get(0).image2_status == 1 && item_detail.get(0).image3_status == 1 && item_detail.get(0).image4_status == 1)) {
-            zoomImage(imageName);
+            zoomImage(imageName+"_ans");
         }
         else{
             Toast.makeText(quizContext,"First open all hidden part of image.",Toast.LENGTH_SHORT).show();
@@ -793,7 +812,7 @@ public class QuizActivity extends AppCompatActivity {
 
         }
         else{
-            zoomImage(image2);
+            zoomImage(image2+"_ans");
         }
     }
 
@@ -829,7 +848,7 @@ public class QuizActivity extends AppCompatActivity {
             sqlt.updateImageOption(itemFilter,"image3_status");
         }
         else{
-            zoomImage(image3);
+            zoomImage(image3+"_ans");
         }
     }
 
@@ -874,7 +893,7 @@ public class QuizActivity extends AppCompatActivity {
             sqlt.updateImageOption(itemFilter,"image4_status");
         }
         else{
-            zoomImage(image4);
+            zoomImage(image4+"_ans");
         }
     }
 
@@ -1093,7 +1112,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
 //load interstitial ads
-                //loadInterstitialHintAd();
+                loadInterstitialHintAd();
 
 
                 String wiki_link = "https://en.wikipedia.org/wiki/"+item_detail.get(0).getWiki_link();
@@ -1158,7 +1177,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public void restartData(){
 //load interstitial ads
-        //loadInterstitialHintAd();
+        loadInterstitialHintAd();
         sqlt.resetData(itemFilter,reference_try,reference_options);
         reloadActivity();
 
@@ -1167,8 +1186,9 @@ public class QuizActivity extends AppCompatActivity {
     public void showSuccessImage(){
         item_detail = sqlt.getQuiz(itemFilter);
         if("success".equals(item_detail.get(0).getResult())){
-            final String imaName = item_detail.get(0).getItem_name().replace(' ','_');
-            zoomImage(imaName);
+            String imaName_ = item_detail.get(0).getItem_name().replace(' ','_');
+            final String imaName = imaName_.replace("&","aanndd");
+            zoomImage(imaName+"_ans");
         }
     }
 
@@ -1189,22 +1209,22 @@ public class QuizActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
-//    public void loadInterstitialHintAd(){
-//        //AdRequest admobHint = new AdRequest.Builder().addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
-//        AdRequest admobHint = new AdRequest.Builder().build();
-//        //for admob interstitial
-//        interstitial = new InterstitialAd(QuizActivity.this);
-//        interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
-//        interstitial.loadAd(admobHint);
-//        interstitial.setAdListener(new AdListener() {
-//            @Override
-//            public void onAdLoaded() {
-//                if(interstitial.isLoaded()){
-//                    interstitial.show();
-//                }
-//            }
-//        });
-//    }
+    public void loadInterstitialHintAd(){
+        AdRequest admobHint = new AdRequest.Builder().addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        //AdRequest admobHint = new AdRequest.Builder().build();
+        //for admob interstitial
+        interstitial = new InterstitialAd(QuizActivity.this);
+        interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
+        interstitial.loadAd(admobHint);
+        interstitial.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                if(interstitial.isLoaded()){
+                    interstitial.show();
+                }
+            }
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

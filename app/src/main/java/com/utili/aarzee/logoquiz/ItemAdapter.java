@@ -49,7 +49,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         Item_Model name = itemListArray.get(position);
 
         if("success".equals(name.getResult().toString())){
-            String imageName = name.getItem_name().replace(' ','_');
+            String imageName = name.getItem_name().replace(' ','_').replace("&","aanndd");
             int d = itemContext.getResources().getIdentifier(imageName,"drawable",itemContext.getPackageName());
             holder.imgView.setImageResource(d);
             holder.imgView.setAlpha(0.2f);
@@ -57,7 +57,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
             holder.correctView.setImageResource(co);
         }
         else{
-            String imageName = name.getItem_name().replace(' ','_');
+            String imageName = name.getItem_name().replace(' ','_').replace("&","aanndd");
             int d = itemContext.getResources().getIdentifier(imageName,"drawable",itemContext.getPackageName());
             holder.imgView.setImageResource(d);
         }

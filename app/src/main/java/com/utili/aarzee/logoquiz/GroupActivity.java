@@ -14,6 +14,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 
 public class GroupActivity extends AppCompatActivity {
@@ -26,6 +29,7 @@ public class GroupActivity extends AppCompatActivity {
     ArrayList<Item_Model> success_list;
     SqliteController sqlt;
     Integer tSuccess = 0;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,16 @@ public class GroupActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_group);
+
+        //MobileAds.initialize(this,"ca-app-pub-5858135794717325~9434563129");
+        mAdView = (AdView) findViewById(R.id.listAdView);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .build();
+
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        mAdView.loadAd(adRequest);
+
 
         sqlt = new SqliteController(getApplicationContext());
         grp_list = sqlt.getGroup();
@@ -63,6 +77,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 2){
                             if(tSuccess <50){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -70,6 +85,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 3){
                             if(tSuccess <70){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -77,6 +93,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 4){
                             if(tSuccess <90){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -84,6 +101,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 5){
                             if(tSuccess <115){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -91,6 +109,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 6){
                             if(tSuccess <135){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -98,6 +117,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 7){
                             if(tSuccess <150){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -105,6 +125,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 8){
                             if(tSuccess <175){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -112,6 +133,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 9){
                             if(tSuccess <200){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -119,6 +141,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 10){
                             if(tSuccess <220){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -126,6 +149,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 11){
                             if(tSuccess <240){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -133,6 +157,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 12){
                             if(tSuccess <260){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -140,6 +165,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 13){
                             if(tSuccess <285){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -147,6 +173,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 14){
                             if(tSuccess <310){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);
@@ -154,6 +181,7 @@ public class GroupActivity extends AppCompatActivity {
                         }
                         else if(position == 15){
                             if(tSuccess <350){
+                                showDetail(position);
                             }
                             else{
                                 showDetail(position);

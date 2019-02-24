@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".QuizActivity">
 
     <ImageView
@@ -81,9 +82,14 @@
         android:id="@+id/answer_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="110dp"
+        android:background="#e5e287"
         android:layout_marginBottom="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         app:layout_constraintBottom_toTopOf="@+id/option_recyclerview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -92,10 +98,15 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/option_recyclerview"
         android:layout_width="match_parent"
+        android:background="#92d5e8"
         android:layout_height="120dp"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -104,6 +115,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#bbbec1"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginStart="12dp"
@@ -120,6 +132,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#bbbec1"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginStart="4dp"
@@ -135,6 +148,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#bbbec1"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginStart="4dp"
@@ -150,6 +164,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#bbbec1"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="4dp"
@@ -164,6 +179,7 @@
         android:id="@+id/restart"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#98c473"
         android:layout_weight="1"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -180,6 +196,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#98c473"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="12dp"
         android:layout_marginTop="8dp"
@@ -219,6 +236,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#bbbec1"
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -228,5 +246,19 @@
         app:layout_constraintStart_toEndOf="@+id/quiz_previous"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/nothing" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/quizAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="20dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

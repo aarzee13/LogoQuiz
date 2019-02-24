@@ -23,6 +23,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -41,6 +44,7 @@ public class HomeActivity extends AppCompatActivity {
     Integer backButtonCount = 0;
     ImageView fbShare;
     ImageView twitter;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +77,13 @@ public class HomeActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+
+        mAdView = (AdView) findViewById(R.id.homeAdView);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .build();
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        mAdView.loadAd(adRequest);
 
 
         constraint = findViewById(R.id.constraint);

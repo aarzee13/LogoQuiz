@@ -2,8 +2,8 @@ package com.utili.aarzee.logoquiz;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
@@ -13,6 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 
@@ -25,6 +28,7 @@ public class ItemActivity extends AppCompatActivity {
     ArrayList<Item_Model> item_list;
     SqliteController sqlt;
     String grpFilter;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,15 @@ public class ItemActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_item);
+
+        //MobileAds.initialize(this,"ca-app-pub-5858135794717325~9434563129");
+        mAdView = (AdView) findViewById(R.id.itemAdView);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .build();
+
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        mAdView.loadAd(adRequest);
 
         Intent i = getIntent();
         grpFilter = i.getStringExtra("grpFilter");

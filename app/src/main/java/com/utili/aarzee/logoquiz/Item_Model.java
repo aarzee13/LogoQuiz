@@ -26,6 +26,7 @@ public class Item_Model {
     Integer image3_status = 0;
     Integer image4_status = 0;
     String reference_options = "";
+    String item_name_filtered = "";
 
 
     public Integer getId() {
@@ -194,5 +195,13 @@ public class Item_Model {
 
     public void setReference_options(String reference_options) {
         this.reference_options = reference_options;
+    }
+
+    public String getItem_name_filtered() {
+        return item_name_filtered;
+    }
+
+    public void setItem_name_filtered(String item_name_filtered) {
+        this.item_name_filtered = item_name_filtered;
     }
 }

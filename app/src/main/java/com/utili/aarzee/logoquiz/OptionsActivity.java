@@ -4,8 +4,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -17,17 +17,23 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+
 import java.util.ArrayList;
 
 public class OptionsActivity extends AppCompatActivity {
 
     Button new_game;
     Button instructions;
-    //AdView mAdView;
+    AdView mAdView;
     SqliteController sqlt;
     ArrayList<Item_Model> all_list;
     ArrayList<Item_Model> new_game_list;
     AlertDialog alertDialog;
+    InterstitialAd interstitial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +47,12 @@ public class OptionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_options);
         sqlt = new SqliteController(getApplicationContext());
 
-//        mAdView = (AdView) findViewById(R.id.optionsAdView);
+        mAdView = (AdView) findViewById(R.id.optionsAdView);
 //        AdRequest adRequest = new AdRequest.Builder()
 //                .build();
-//        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
-//        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
-//        mAdView.loadAd(adRequest);
+        //AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("2D9B4B2278852FCB4969314FB997BCD1").build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        mAdView.loadAd(adRequest);
 
         new_game = (Button) findViewById(R.id.options_new_game);
         instructions = (Button) findViewById(R.id.options_instructions);
@@ -80,6 +86,7 @@ public class OptionsActivity extends AppCompatActivity {
                         Toast.makeText(OptionsActivity.this, "All Data Reset. Start new game.", Toast.LENGTH_SHORT).show();
                     }})
                 .setNegativeButton(android.R.string.no, null).show();
+        loadInterstitialHintAd();
     }
 
     public void showInstructions(){
@@ -113,6 +120,23 @@ public class OptionsActivity extends AppCompatActivity {
         // show it
         alertDialog.show();
         alertDialog.getWindow().setLayout(width,height);
+    }
+
+    public void loadInterstitialHintAd(){
+        AdRequest admobHint = new AdRequest.Builder().addTestDevice("E498786B6424DB4D655F2D365A363A66").build();
+        //AdRequest admobHint = new AdRequest.Builder().build();
+        //for admob interstitial
+        interstitial = new InterstitialAd(OptionsActivity.this);
+        interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
+        interstitial.loadAd(admobHint);
+        interstitial.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                if(interstitial.isLoaded()){
+                    interstitial.show();
+                }
+            }
+        });
     }
 
     @Override
